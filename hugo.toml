@@ -59,7 +59,7 @@ style = "github-dark"
   loading = "lazy"
 
 
-# [params.googleTagManager]
+[params.googleTagManager]
 id = "GTM-P9LPHJSJ"
 
 # Social links
