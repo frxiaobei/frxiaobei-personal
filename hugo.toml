@@ -1,5 +1,5 @@
 baseurl = "http://www.frxiaobei.com"
-title = "凡人小北"
+title = "凡人小北 · 转角处"
 theme = "hugo-coder"
 languagecode = "zh-cn"
 defaultcontentlanguage = "zh-cn"
@@ -12,9 +12,10 @@ pagerSize = 20
 [markup.highlight]
 style = "github-dark"
 
+
 [params]
   author = "凡人小北"
-  info = "行道途中。非求速成，惟求通达。"
+  info = "每一个转角，都是遇见下一条路的开始。在转角处，写下关于AI、思考与拐点的故事。"
   description = "frxiaobei's personal website"
   keywords = "blog,developer,personal"
   avatarurl = "images/avatar.jpg"
