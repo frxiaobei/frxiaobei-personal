@@ -59,9 +59,8 @@ style = "github-dark"
   loading = "lazy"
 
 
-# If you want to use Google Tag Manager(https://analytics.google.com/) for analytics, add this section
 # [params.googleTagManager]
-# id = "GTM-P9LPHJSJ"
+id = "GTM-P9LPHJSJ"
 
 # Social links
 [[params.social]]
