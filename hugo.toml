@@ -8,9 +8,6 @@ defaultcontentlanguage = "zh-cn"
 [pagination]
 pagerSize = 20
 
-[services]
-[services.disqus]
-shortname = "yourdiscussshortname"
 
 [markup.highlight]
 style = "github-dark"
@@ -44,6 +41,28 @@ style = "github-dark"
   tag = "tags"
   author = "authors"
 
+
+
+[params.giscus]
+  repo = "frxiaobei/frxiaobei-comments"
+  repoID = "R_kgDOQJ_6ng"
+  category = "Announcements"
+  categoryID = "DIC_kwDOQJ_6ns4CxH-e"
+  mapping = "pathname"
+  term = ""
+  strict = "0"
+  reactionsEnabled = "1"
+  emitMetadata = "0"
+  inputPosition = "bottom"
+  theme = "preferred_color_scheme"
+  lang = "zh-CN"
+  loading = "lazy"
+
+
+# If you want to use Google Tag Manager(https://analytics.google.com/) for analytics, add this section
+# [params.googleTagManager]
+# id = "GTM-P9LPHJSJ"
+
 # Social links
 [[params.social]]
   name = "Github"
@@ -55,6 +74,14 @@ style = "github-dark"
   icon = "fa-brands fa-x-twitter fa-2x"
   weight = 2
   url = "https://twitter.com/frxiaobei/"
+
+[[params.social]]
+  name = "RSS"
+  icon = "fa-solid fa-rss fa-2x"
+  weight = 6
+  url = "https://frxiaobei.com/index.xml"
+  rel = "alternate"
+  type = "application/rss+xml"
 
 # Menu links
 [[menu.main]]
