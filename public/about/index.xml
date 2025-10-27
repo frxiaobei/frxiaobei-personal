@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on 凡人小北</title>
+    <link>http://localhost:61456/about/</link>
+    <description>Recent content in Abouts on 凡人小北</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 27 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:61456/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:61456/about/about/</link>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:61456/about/about/</guid>
+      <description>&lt;p&gt;你好，我是凡人小北。这里是我的个人站点。&#xA;目前关注 AI 创作、X 平台内容……&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

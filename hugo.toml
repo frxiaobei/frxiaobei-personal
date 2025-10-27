@@ -1,0 +1,67 @@
+baseurl = "http://www.frxiaobei.com"
+title = "凡人小北"
+theme = "hugo-coder"
+languagecode = "zh-cn"
+defaultcontentlanguage = "zh-cn"
+
+
+[pagination]
+pagerSize = 20
+
+[services]
+[services.disqus]
+shortname = "yourdiscussshortname"
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "凡人小北"
+  info = "行道途中。非求速成，惟求通达。"
+  description = "frxiaobei's personal website"
+  keywords = "blog,developer,personal"
+  avatarurl = "images/avatar.jpg"
+  #gravatar = "herove@gmail.com"
+
+  faviconSVG = "/img/favicon.svg"
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  since = 2025
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/johndoe/"
+[[params.social]]
+  name = "Twitter"
+  icon = "fa-brands fa-x-twitter fa-2x"
+  weight = 2
+  url = "https://twitter.com/frxiaobei/"
+
+# Menu links
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  url  = "posts/"
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"
