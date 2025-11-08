@@ -3,6 +3,7 @@ title = "凡人小北 · 转角处"
 theme = "hugo-coder"
 languagecode = "zh-cn"
 defaultcontentlanguage = "zh-cn"
+defaultContentLanguageInSubdir = false
 
 
 [pagination]
@@ -83,12 +84,35 @@ id = "GTM-P9LPHJSJ"
   rel = "alternate"
   type = "application/rss+xml"
 
-# Menu links
-[[menu.main]]
-  name = "Blog"
-  weight = 1
-  url  = "posts/"
-[[menu.main]]
-  name = "About"
-  weight = 2
-  url = "about/"
+# Languages
+[languages.zh-cn]
+  languageName = "🇨🇳"
+  title = "凡人小北 · 转角处"
+  [languages.zh-cn.params]
+    author = "凡人小北"
+    info = "每一个转角，都是遇见下一条路的开始。在转角处，写下关于AI、思考与拐点的故事。"
+    description = "frxiaobei's personal website"
+  [[languages.zh-cn.menu.main]]
+    name = "博客"
+    weight = 1
+    url = "posts/"
+  [[languages.zh-cn.menu.main]]
+    name = "关于"
+    weight = 2
+    url = "about/"
+
+[languages.en]
+  languageName = "🇺🇸"
+  title = "frxiaobei · Corner Flow"
+  [languages.en.params]
+    author = "frxiaobei"
+    info = "Every corner is the beginning of meeting the next road. Writing stories about AI, thoughts and turning points at the corner."
+    description = "frxiaobei's personal website"
+  [[languages.en.menu.main]]
+    name = "Blog"
+    weight = 1
+    url = "posts/"
+  [[languages.en.menu.main]]
+    name = "About"
+    weight = 2
+    url = "about/"

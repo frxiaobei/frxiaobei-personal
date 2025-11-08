@@ -40,9 +40,9 @@ description: "一个 AI 创作者、产品探索者的自我介绍，以及这�
 ### 📬 联系我
 
 - **X（Twitter）：**[@frxiaobei](https://x.com/frxiaobei)
-- **小红书：**凡人小北
-- **Email / 合作 / 项目交流：**请通过社交平台私信联系
-- **Newsletter / RSS / 私密内容发布区：**开发中，后续上线
+- **小红书：** 凡人小北
+- **Email / 合作 / 项目交流：** 请通过社交平台私信联系
+- **Newsletter / RSS / 私密内容发布区：** 开发中，后续上线
 
 ---
 
