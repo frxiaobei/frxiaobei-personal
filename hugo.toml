@@ -22,7 +22,7 @@ style = "github-dark"
   avatarurl = "images/avatar.jpg"
   #gravatar = "herove@gmail.com"
 
-  faviconSVG = "/img/favicon.svg"
+  # faviconSVG = "/img/favicon.svg"
   favicon_32 = "/img/favicon-32x32.png"
   favicon_16 = "/img/favicon-16x16.png"
 
