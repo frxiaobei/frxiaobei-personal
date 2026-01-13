@@ -1,15 +1,15 @@
 ---
-title: "中推圈都在教怎么写 Skill，但你可能正在重复 MCP 的错误"
+title: 中推圈都在教怎么写 Skill，但你可能正在重复 MCP 的错误 | 写给管理者
 date: 2026-01-13T23:45:00+08:00
 draft: false
-tags: ["AI", "Skill", "组织管理", "MCP", "AI Native"]
-description: "从 MCP 的教训到 Skill 的本质，探讨 AI 时代组织变革的真实挑战。不是工具的问题，而是工作方式和组织架构必须改变。"
+tags:
+  - AI
+  - Skill
+  - 组织管理
+  - MCP
+  - AI Native
+description: 从 MCP 的教训到 Skill 的本质，探讨 AI 时代组织变革的真实挑战。不是工具的问题，而是工作方式和组织架构必须改变。
 ---
-
-# 中推圈都在教怎么写 Skill，但你可能正在重复 MCP 的错误 | 写给管理者
-
----
-
 最近中推圈在疯传"怎么写 Claude Skills"。
 
 这让我想起去年4月，老板大笔一挥决定搞 MCP。不到百人的团队,不到一年时间，搞出了上百个 MCP。

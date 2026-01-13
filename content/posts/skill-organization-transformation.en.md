@@ -5,11 +5,6 @@ draft: false
 tags: ["AI", "Skills", "organizational management", "MCP", "AI Native"]
 description: "From MCP's hard lessons to what Skills really mean—the real challenge of organizational transformation in the AI era. It's not about the tools. It's about changing how you work and restructuring your org."
 ---
-
-# Everyone's Teaching How to Write Skills, But You're Probably Making the Same Mistakes We Made with MCP
-
----
-
 Lately, everyone's been sharing "how to write Claude Skills."
 
 It reminds me of last April when the boss decided we were going all-in on MCP. Less than 100 people on the team, and in under a year, we cranked out over a hundred MCPs.
