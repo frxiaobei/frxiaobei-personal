@@ -19,7 +19,6 @@ But I'm also guessing most companies will repeat the same mistakes.
 
 **Why? Because everyone's treating an "organizational transformation" problem like it's a "tool procurement" problem.**
 
----
 
 ## 1. Let's Talk About What We Learned from MCP
 
@@ -43,7 +42,6 @@ Now Skills are here. And I'm seeing the same pattern.
 
 Tutorials everywhere teaching "how to write Skills." But almost nobody's asking: **Why write Skills? What problem are they actually solving?**
 
----
 
 ## 2. Skills: Not Just a Tool—More Like a Mirror
 
@@ -73,7 +71,6 @@ Skills internalize the knowledge, workflows, and standards of a specific domain 
 
 But after using it for a while, you realize—this isn't just a tool upgrade.
 
----
 
 ## 3. Why Skills Exist: Tech Evolution Hit a Wall
 
@@ -95,7 +92,6 @@ Skills solve this problem. Not by providing reference materials, but by packagin
 
 This isn't some company's product innovation. Once general capabilities are strong enough, the next step is inevitably adapting to specific organizations and scenarios.
 
----
 
 ## 4. What Skills Reveal: Why AI Results Vary So Wildly
 
@@ -127,7 +123,6 @@ Newbies call this Skill, AI works to the expert's standards.
 
 It's not about eliminating differences. It's about changing how "experience transfers."
 
----
 
 ## 5. The Essence of Skills: From Human-Driven to AI Self-Driven
 
@@ -155,7 +150,6 @@ How's it going? Honestly, so-so right now. AI can run through the process, but o
 
 But I think the direction's right. The question isn't whether AI can do it, but that we haven't found the optimal human-AI collaboration model yet. The Skill's still being tuned—that's part of the exploration.
 
----
 
 ## 6. Skills Expose Organizational Fragility
 
@@ -183,7 +177,6 @@ This doesn't mean AI can replace architects. But it can preserve the architect's
 
 The org's resilience becomes different.
 
----
 
 ## 7. The Bigger Picture from Skills: Organizations Must Restructure
 
@@ -227,7 +220,6 @@ This requires orgs to redesign work processes, redefine job responsibilities.
 
 **These three changes are a chain reaction: Execution taken over → role boundaries blur → workflow restructures. All essentially point to one thing: The org's value creation method changed.**
 
----
 
 **These changes are happening. The direction's clear.**
 
@@ -237,7 +229,6 @@ Many managers will hesitate because they don't see clear ROI in the short term.
 
 **But the risk of not changing might be bigger than changing.**
 
----
 
 ## 8. The Top Leader Has to Step Up
 
@@ -277,7 +268,6 @@ Many managers think: Let's wait a bit. Wait till AI's more mature. Wait till the
 
 Their teams are already working in an AI Native way. Efficiency and innovation speed are already pulling ahead. By the time you're "ready," it might be too late.
 
----
 
 Skills are just an entry point. They let me see one side of organizational transformation in the AI era.
 
@@ -321,7 +311,6 @@ After a month, you'll have real data and feelings. Way more useful than agonizin
 - Don't expect instant results—give the team time to explore
 - Don't just buy tools without changing processes—that's wasting money
 
----
 
 ## 9. My Prediction
 
@@ -355,7 +344,6 @@ Tools need to adapt to teams, or transform teams. Do neither, and you're just me
 
 **If you read this far and still don't know how to start, go back and look at Chapter 8's 5 steps. You can start today.**
 
----
 
 ## Postscript: How This Article Was Written
 
