@@ -15,7 +15,7 @@ In the AI era, most people's futures are up in the air.
 
 This morning I came across a tweet from @python_xxt saying individuals need to be like loaches—constantly finding cracks, squirming through, staying flexible, carving out their own niche. He's right. But I want to add something: squirming alone isn't enough. You need to accumulate something with every step.
 
-![[x-img.png]]
+![](x-img.png)
 
 Let's talk about how to squirm, where to squirm, and how to make it all worth your while.
 
