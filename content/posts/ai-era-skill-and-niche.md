@@ -1,5 +1,5 @@
 ---
-title: AI 时代，大多数人的未来其实都悬着 ｜ Skill 让你有饭吃，Niche 让你不可替代
+title: AI 时代，大多数人的未来其实都悬着 ｜ 关于 Skill 和 Niche 的一些看法
 date: 2026-01-19T17:03:00+08:00
 draft: false
 tags:
