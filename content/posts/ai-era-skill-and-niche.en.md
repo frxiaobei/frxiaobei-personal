@@ -1,9 +1,14 @@
 ---
-title: "In the AI Era, Most People's Futures Are Up in the Air—Skills Keep You Fed, Niche Makes You Irreplaceable"
+title: In the AI Era, Most People's Futures Are Up in the Air ｜ Skills Keep You Fed, Niche Makes You Irreplaceable
 date: 2026-01-19T17:03:00+08:00
 draft: false
-tags: ["AI", "Skill", "Niche", "personal growth", "career development"]
-description: "In the AI era, there's no comfort zone. You have to squirm like a loach, finding cracks to squeeze through. But squirming isn't enough—you need to accumulate something with every step. Skills keep you fed, Niche makes you irreplaceable. You need both."
+tags:
+  - AI
+  - Skill
+  - Niche
+  - personal growth
+  - career development
+description: In the AI era, there's no comfort zone. You have to squirm like a loach, finding cracks to squeeze through. But squirming isn't enough—you need to accumulate something with every step. Skills keep you fed, Niche makes you irreplaceable. You need both.
 ---
 
 In the AI era, most people's futures are up in the air.
