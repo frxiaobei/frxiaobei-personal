@@ -1,5 +1,5 @@
 ---
-title: In the AI Era, Most People's Futures Are Up in the Air ｜ Skills Keep You Fed, Niche Makes You Irreplaceable
+title: In the AI Era, Most People's Futures Are Up in the Air ｜ Some Thoughts on Skill and Niche
 date: 2026-01-19T17:03:00+08:00
 draft: false
 tags:
