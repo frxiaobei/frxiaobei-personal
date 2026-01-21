@@ -1,0 +1,21 @@
+# Custom 404 page translations
+[error_404_char_1]
+other = "4"
+
+[error_404_char_2]
+other = "0"
+
+[error_404_char_3]
+other = "4"
+
+[error_404_title]
+other = "Path Not Found"
+
+[error_404_poem_1]
+other = "Where the river ends, clouds arise"
+
+[error_404_poem_2]
+other = "You've reached an unknown corner"
+
+[error_404_back]
+other = "Return Home"

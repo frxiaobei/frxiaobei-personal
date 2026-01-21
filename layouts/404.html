@@ -1,0 +1,340 @@
+{{ define "title" }}404 · {{ i18n "error_404_title" }} | {{ .Site.Title }}{{ end }}
+
+{{ define "content" }}
+<section class="container">
+  <div class="error-page-404">
+    <!-- 背景装饰层 -->
+    <div class="ink-bg">
+      <div class="mountain mountain-1"></div>
+      <div class="mountain mountain-2"></div>
+      <div class="mountain mountain-3"></div>
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+    </div>
+    
+    <!-- 主内容 -->
+    <div class="error-content">
+      <div class="error-number">
+        <span class="char">{{ i18n "error_404_char_1" }}</span>
+        <span class="char zero">{{ i18n "error_404_char_2" }}</span>
+        <span class="char">{{ i18n "error_404_char_3" }}</span>
+      </div>
+      
+      <div class="error-divider">
+        <span class="line"></span>
+        <span class="dot">◆</span>
+        <span class="line"></span>
+      </div>
+      
+      <h1 class="error-title">{{ i18n "error_404_title" }}</h1>
+      
+      <p class="error-poem">
+        {{ i18n "error_404_poem_1" }}<br/>
+        <span class="poem-note">—— {{ i18n "error_404_poem_2" }}</span>
+      </p>
+      
+      <a href="{{ .Site.BaseURL }}" class="back-home">
+        <span class="back-icon">←</span>
+        <span class="back-text">{{ i18n "error_404_back" }}</span>
+      </a>
+    </div>
+    
+    <!-- 落叶装饰 -->
+    <div class="leaves">
+      <div class="leaf leaf-1">🍂</div>
+      <div class="leaf leaf-2">🍃</div>
+      <div class="leaf leaf-3">🍂</div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .error-page-404 {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 2rem;
+  }
+  
+  /* 水墨背景 */
+  .ink-bg {
+    position: absolute;
+    inset: 0;
+    opacity: 0.15;
+    pointer-events: none;
+  }
+  
+  .colorscheme-dark .ink-bg {
+    opacity: 0.1;
+  }
+  
+  /* 山峦 */
+  .mountain {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: currentColor;
+    opacity: 0.3;
+  }
+  
+  .mountain-1 {
+    height: 120px;
+    clip-path: polygon(0 100%, 15% 40%, 30% 70%, 50% 20%, 70% 60%, 85% 30%, 100% 80%, 100% 100%);
+    animation: mountain-float 8s ease-in-out infinite;
+  }
+  
+  .mountain-2 {
+    height: 100px;
+    clip-path: polygon(0 80%, 20% 50%, 40% 80%, 60% 30%, 80% 70%, 100% 50%, 100% 100%, 0 100%);
+    opacity: 0.2;
+    animation: mountain-float 10s ease-in-out infinite reverse;
+  }
+  
+  .mountain-3 {
+    height: 80px;
+    clip-path: polygon(0 60%, 25% 40%, 45% 70%, 65% 25%, 85% 55%, 100% 40%, 100% 100%, 0 100%);
+    opacity: 0.1;
+    animation: mountain-float 12s ease-in-out infinite;
+  }
+  
+  @keyframes mountain-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+  
+  /* 云雾 */
+  .cloud {
+    position: absolute;
+    background: currentColor;
+    border-radius: 50%;
+    filter: blur(30px);
+    opacity: 0.15;
+  }
+  
+  .cloud-1 {
+    width: 200px;
+    height: 60px;
+    top: 20%;
+    left: 10%;
+    animation: cloud-drift 15s ease-in-out infinite;
+  }
+  
+  .cloud-2 {
+    width: 300px;
+    height: 80px;
+    top: 30%;
+    right: 5%;
+    animation: cloud-drift 20s ease-in-out infinite reverse;
+  }
+  
+  .cloud-3 {
+    width: 150px;
+    height: 50px;
+    top: 50%;
+    left: 30%;
+    animation: cloud-drift 18s ease-in-out infinite;
+  }
+  
+  @keyframes cloud-drift {
+    0%, 100% { transform: translateX(0); opacity: 0.15; }
+    50% { transform: translateX(30px); opacity: 0.25; }
+  }
+  
+  /* 主内容 */
+  .error-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  /* 404 数字 */
+  .error-number {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .error-number .char {
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 1;
+    opacity: 0.9;
+    animation: char-appear 0.8s ease-out backwards;
+  }
+  
+  .error-number .char:nth-child(1) { animation-delay: 0.1s; }
+  .error-number .char:nth-child(2) { animation-delay: 0.2s; }
+  .error-number .char:nth-child(3) { animation-delay: 0.3s; }
+  
+  .error-number .zero {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+  
+  @keyframes char-appear {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .error-number .char {
+      font-size: 3.5rem;
+    }
+  }
+  
+  /* 分隔线 */
+  .error-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    opacity: 0.4;
+  }
+  
+  .error-divider .line {
+    width: 60px;
+    height: 1px;
+    background: currentColor;
+  }
+  
+  .error-divider .dot {
+    font-size: 0.6rem;
+    animation: dot-pulse 2s ease-in-out infinite;
+  }
+  
+  @keyframes dot-pulse {
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(1.2); }
+  }
+  
+  /* 标题 */
+  .error-title {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    margin: 0 0 2rem 0;
+    opacity: 0.85;
+    animation: fade-in 1s ease-out 0.5s backwards;
+  }
+  
+  @media (max-width: 768px) {
+    .error-title {
+      font-size: 1.5rem;
+      letter-spacing: 0.3em;
+    }
+  }
+  
+  /* 诗句 */
+  .error-poem {
+    font-size: 1.1rem;
+    line-height: 2;
+    opacity: 0.7;
+    margin: 0 0 2.5rem 0;
+    animation: fade-in 1s ease-out 0.7s backwards;
+  }
+  
+  .poem-note {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.6;
+    margin-top: 0.5rem;
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+  }
+  
+  /* 返回按钮 */
+  .back-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 2rem;
+    border: 1px solid currentColor;
+    border-radius: 2px;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    animation: fade-in 1s ease-out 0.9s backwards;
+  }
+  
+  .back-home:hover {
+    opacity: 1;
+    background: rgba(128, 128, 128, 0.1);
+    transform: translateX(-5px);
+  }
+  
+  .back-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .back-home:hover .back-icon {
+    transform: translateX(-5px);
+  }
+  
+  .back-text {
+    letter-spacing: 0.2em;
+  }
+  
+  /* 落叶装饰 */
+  .leaves {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  .leaf {
+    position: absolute;
+    font-size: 1.2rem;
+    opacity: 0.4;
+    animation: leaf-fall linear infinite;
+  }
+  
+  .leaf-1 {
+    left: 15%;
+    animation-duration: 12s;
+    animation-delay: 0s;
+  }
+  
+  .leaf-2 {
+    left: 50%;
+    animation-duration: 15s;
+    animation-delay: 3s;
+  }
+  
+  .leaf-3 {
+    left: 80%;
+    animation-duration: 10s;
+    animation-delay: 6s;
+  }
+  
+  @keyframes leaf-fall {
+    0% {
+      top: -10%;
+      transform: translateX(0) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.4;
+    }
+    90% {
+      opacity: 0.4;
+    }
+    100% {
+      top: 100%;
+      transform: translateX(50px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+</style>
+{{ end }}

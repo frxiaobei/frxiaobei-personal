@@ -1,0 +1,21 @@
+# 自定义 404 页面翻译
+[error_404_char_1]
+other = "四"
+
+[error_404_char_2]
+other = "〇"
+
+[error_404_char_3]
+other = "四"
+
+[error_404_title]
+other = "此路不通"
+
+[error_404_poem_1]
+other = "行至水穷处，坐看云起时"
+
+[error_404_poem_2]
+other = "你来到了一个未知的转角"
+
+[error_404_back]
+other = "归去来兮"
