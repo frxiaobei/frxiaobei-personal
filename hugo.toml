@@ -75,6 +75,15 @@ id = "GTM-P9LPHJSJ"
   icon = "fa-brands fa-x-twitter fa-2x"
   weight = 2
   url = "https://twitter.com/frxiaobei/"
+[[params.social]]
+  name = "Threads"
+  icon = "fa-brands fa-threads fa-2x"
+  weight = 3
+  url = "https://www.threads.com/@frxiaobei"
+[[params.social]]
+  name = "小红书"
+  weight = 4
+  url = "https://www.xiaohongshu.com/user/profile/6726d28b000000001c01b8a8"
 
 [[params.social]]
   name = "RSS"
