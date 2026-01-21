@@ -84,6 +84,11 @@ id = "GTM-P9LPHJSJ"
   name = "小红书"
   weight = 4
   url = "https://www.xiaohongshu.com/user/profile/6726d28b000000001c01b8a8"
+[[params.social]]
+  name = "公众号"
+  icon = "fa-brands fa-weixin fa-2x"
+  weight = 5
+  url = "#wechat-qr"
 
 [[params.social]]
   name = "RSS"
