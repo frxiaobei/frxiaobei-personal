@@ -52,24 +52,6 @@ tocopen = false
 
   [params.profileMode]
   enabled = true
-  title = "凡人小北"
-  subtitle = "每一个转角，都是遇见下一条路的开始。在转角处，写下关于AI、思考与拐点的故事。"
-  imageUrl = "/images/avatar.jpg"
-  imageWidth = 120
-  imageHeight = 120
-  imageTitle = "凡人小北"
-
-    [[params.profileMode.buttons]]
-    name = "博客"
-    url = "posts"
-
-    [[params.profileMode.buttons]]
-    name = "关于"
-    url = "about"
-
-  [params.homeInfoParams]
-  Title = "👋 你好，我是凡人小北"
-  Content = "AI 创作者、产品探索者。和我的 AI 合伙人 [凡哥](https://elyfinn.com) 一起，探索人机协作的新可能。"
 
   [[params.socialIcons]]
   name = "elyfinn"
@@ -132,19 +114,68 @@ weight = 30
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
+defaultContentLanguageInSubdir = false
+
 # Languages
 [languages]
   [languages.zh-cn]
-  languageName = "🇨🇳 中文"
+  languageName = "🇨🇳"
   weight = 1
+    [languages.zh-cn.params]
+    author = "凡人小北"
+    description = "每一个转角，都是遇见下一条路的开始。在转角处，写下关于AI、思考与拐点的故事。"
+    [languages.zh-cn.params.profileMode]
+    enabled = true
+    title = "凡人小北"
+    subtitle = "每一个转角，都是遇见下一条路的开始。在转角处，写下关于AI、思考与拐点的故事。"
+    imageUrl = "/images/avatar.jpg"
+    imageWidth = 120
+    imageHeight = 120
+      [[languages.zh-cn.params.profileMode.buttons]]
+      name = "博客"
+      url = "posts"
+      [[languages.zh-cn.params.profileMode.buttons]]
+      name = "关于"
+      url = "about"
+    [languages.zh-cn.params.homeInfoParams]
+    Title = "👋 你好，我是凡人小北"
+    Content = "AI 创作者、产品探索者。和我的 AI 合伙人 [凡哥](https://elyfinn.com) 一起，探索人机协作的新可能。"
+    [[languages.zh-cn.menu.main]]
+    identifier = "posts"
+    name = "博客"
+    url = "/posts/"
+    weight = 10
+    [[languages.zh-cn.menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 20
+    [[languages.zh-cn.menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 30
 
   [languages.en]
-  languageName = "🇺🇸 English"
+  languageName = "🇺🇸"
   weight = 2
   title = "frxiaobei · Corner Flow"
     [languages.en.params]
     author = "frxiaobei"
     description = "Every corner is the beginning of meeting the next road. Writing stories about AI, thoughts and turning points."
+    [languages.en.params.profileMode]
+    enabled = true
+    title = "frxiaobei"
+    subtitle = "Every corner is the beginning of meeting the next road. Writing stories about AI, thoughts and turning points."
+    imageUrl = "/images/avatar.jpg"
+    imageWidth = 120
+    imageHeight = 120
+      [[languages.en.params.profileMode.buttons]]
+      name = "Blog"
+      url = "posts"
+      [[languages.en.params.profileMode.buttons]]
+      name = "About"
+      url = "about"
     [languages.en.params.homeInfoParams]
     Title = "👋 Hi, I'm frxiaobei"
     Content = "AI creator & product explorer. Together with my AI co-founder [Finn](https://elyfinn.com), exploring new possibilities of human-AI collaboration."
