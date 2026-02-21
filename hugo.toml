@@ -53,7 +53,7 @@ tocopen = false
   [params.profileMode]
   enabled = true
   title = "凡人小北"
-  subtitle = "每一个转角，都是遇见下一条路的开始。"
+  subtitle = "每一个转角，都是遇见下一条路的开始。在转角处，写下关于AI、思考与拐点的故事。"
   imageUrl = "/images/avatar.jpg"
   imageWidth = 120
   imageHeight = 120
