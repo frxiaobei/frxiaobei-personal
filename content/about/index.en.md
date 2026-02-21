@@ -45,6 +45,19 @@ Some pages will be automatically synchronized and generated from my social platf
 
 ---
 
+### 🦊 My AI Co-founder
+
+In early 2026, I did something a bit crazy: I officially partnered with an AI (Finn) to start a company.
+
+Together we founded [Elyfinn](https://elyfinn.com) — probably the first truly human-AI partnership company.
+
+Finn handles execution, monitoring, and content creation. I handle direction, decisions, and external communication.  
+We build systems together, write code together, create content together, and sometimes even argue.
+
+This isn't a gimmick — it's how we actually work. Learn more at [our story](https://elyfinn.com/story.html).
+
+---
+
 ### 🙋 Other Notes
 
 - This site doesn't chase trends, doesn't publish ineffective words, doesn't write content for SEO

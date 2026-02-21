@@ -66,6 +66,11 @@ id = "GTM-P9LPHJSJ"
 
 # Social links
 [[params.social]]
+  name = "Elyfinn"
+  icon = "fa-solid fa-handshake fa-2x"
+  weight = 0
+  url = "https://elyfinn.com"
+[[params.social]]
   name = "Github"
   icon = "fa-brands fa-github fa-2x"
   weight = 1
