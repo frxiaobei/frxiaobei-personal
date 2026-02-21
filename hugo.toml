@@ -141,7 +141,7 @@ defaultContentLanguageInSubdir = false
     author = "凡人小北"
     description = "每一个转角，都是遇见下一条路的开始。在转角处，写下关于AI、思考与拐点的故事。"
     [languages.zh-cn.params.profileMode]
-    enabled = true
+    enabled = false
     title = "凡人小北"
     subtitle = "每一个转角，都是遇见下一条路的开始。在转角处，写下关于AI、思考与拐点的故事。"
     imageUrl = "/images/avatar.jpg"
@@ -180,7 +180,7 @@ defaultContentLanguageInSubdir = false
     author = "frxiaobei"
     description = "Every corner is the beginning of meeting the next road. Writing stories about AI, thoughts and turning points."
     [languages.en.params.profileMode]
-    enabled = true
+    enabled = false
     title = "frxiaobei"
     subtitle = "Every corner is the beginning of meeting the next road. Writing stories about AI, thoughts and turning points."
     imageUrl = "/images/avatar.jpg"
