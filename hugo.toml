@@ -1,137 +1,172 @@
-baseurl = "http://www.frxiaobei.com"
+baseurl = "https://www.frxiaobei.com"
 title = "凡人小北 · 转角处"
-theme = "hugo-coder"
-languagecode = "zh-cn"
-defaultcontentlanguage = "zh-cn"
-defaultContentLanguageInSubdir = false
+theme = "PaperMod"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
 
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
 
 [pagination]
-pagerSize = 20
+pagerSize = 10
 
-
-[markup.highlight]
-style = "github-dark"
-
+[minify]
+disableXML = true
+minifyOutput = true
 
 [params]
-  author = "凡人小北"
-  info = "每一个转角，都是遇见下一条路的开始。在转角处，写下关于AI、思考与拐点的故事。"
-  description = "frxiaobei's personal website"
-  keywords = "blog,developer,personal"
-  avatarurl = "images/avatar.jpg"
-  #gravatar = "herove@gmail.com"
+env = "production"
+author = "凡人小北"
+description = "每一个转角，都是遇见下一条路的开始。在转角处，写下关于AI、思考与拐点的故事。"
+keywords = ["blog", "AI", "agent", "凡人小北", "frxiaobei"]
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = false
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = true
+hidemeta = false
+hideSummary = false
+showtoc = true
+tocopen = false
 
-  # faviconSVG = "/img/favicon.svg"
-  favicon_32 = "/img/favicon-32x32.png"
-  favicon_16 = "/img/favicon-16x16.png"
+  [params.assets]
+  favicon = "/img/favicon-16x16.png"
+  favicon16x16 = "/img/favicon-16x16.png"
+  favicon32x32 = "/img/favicon-32x32.png"
+  apple_touch_icon = "/img/favicon-32x32.png"
 
-  since = 2025
+  [params.label]
+  text = "凡人小北"
+  icon = "/images/avatar.jpg"
+  iconHeight = 35
 
-  enableTwemoji = true
+  [params.profileMode]
+  enabled = true
+  title = "凡人小北"
+  subtitle = "每一个转角，都是遇见下一条路的开始。"
+  imageUrl = "/images/avatar.jpg"
+  imageWidth = 120
+  imageHeight = 120
+  imageTitle = "凡人小北"
 
-  colorScheme = "auto"
-  hidecolorschemetoggle = false
+    [[params.profileMode.buttons]]
+    name = "博客"
+    url = "posts"
 
-  # customCSS = ["css/custom.css"]
-  # customSCSS = ["scss/custom.scss"]
-  # customJS = ["js/custom.js"]
+    [[params.profileMode.buttons]]
+    name = "关于"
+    url = "about"
 
-[taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
-  author = "authors"
+  [params.homeInfoParams]
+  Title = "👋 你好，我是凡人小北"
+  Content = "AI 创作者、产品探索者。和我的 AI 合伙人 [凡哥](https://elyfinn.com) 一起，探索人机协作的新可能。"
 
+  [[params.socialIcons]]
+  name = "elyfinn"
+  url = "https://elyfinn.com"
 
+  [[params.socialIcons]]
+  name = "x"
+  url = "https://x.com/frxiaobei"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/frxiaobei"
+
+  [[params.socialIcons]]
+  name = "rss"
+  url = "index.xml"
+
+[params.cover]
+hidden = false
+hiddenInList = false
+hiddenInSingle = false
 
 [params.giscus]
-  repo = "frxiaobei/frxiaobei-comments"
-  repoID = "R_kgDOQJ_6ng"
-  category = "Announcements"
-  categoryID = "DIC_kwDOQJ_6ns4CxH-e"
-  mapping = "pathname"
-  term = ""
-  strict = "0"
-  reactionsEnabled = "1"
-  emitMetadata = "0"
-  inputPosition = "bottom"
-  theme = "preferred_color_scheme"
-  lang = "zh-CN"
-  loading = "lazy"
-
+repo = "frxiaobei/frxiaobei-comments"
+repoID = "R_kgDOQJ_6ng"
+category = "Announcements"
+categoryID = "DIC_kwDOQJ_6ns4CxH-e"
+mapping = "pathname"
+strict = "0"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "bottom"
+theme = "preferred_color_scheme"
+lang = "zh-CN"
+loading = "lazy"
 
 [params.googleTagManager]
 id = "GTM-P9LPHJSJ"
 
-# Social links
-[[params.social]]
-  name = "Elyfinn"
-  icon = "fa-solid fa-handshake fa-2x"
-  weight = 0
-  url = "https://elyfinn.com"
-[[params.social]]
-  name = "Github"
-  icon = "fa-brands fa-github fa-2x"
-  weight = 1
-  url = "https://github.com/frxiaobei/"
-[[params.social]]
-  name = "Twitter"
-  icon = "fa-brands fa-x-twitter fa-2x"
-  weight = 2
-  url = "https://twitter.com/frxiaobei/"
-[[params.social]]
-  name = "Threads"
-  icon = "fa-brands fa-threads fa-2x"
-  weight = 3
-  url = "https://www.threads.com/@frxiaobei"
-[[params.social]]
-  name = "小红书"
-  weight = 4
-  url = "https://www.xiaohongshu.com/user/profile/6726d28b000000001c01b8a8"
-[[params.social]]
-  name = "公众号"
-  icon = "fa-brands fa-weixin fa-2x"
-  weight = 5
-  url = "#wechat-qr"
+# Menus
+[[menu.main]]
+identifier = "posts"
+name = "博客"
+url = "/posts/"
+weight = 10
 
-[[params.social]]
-  name = "RSS"
-  icon = "fa-solid fa-rss fa-2x"
-  weight = 6
-  url = "https://frxiaobei.com/index.xml"
-  rel = "alternate"
-  type = "application/rss+xml"
+[[menu.main]]
+identifier = "about"
+name = "关于"
+url = "/about/"
+weight = 20
+
+[[menu.main]]
+identifier = "search"
+name = "搜索"
+url = "/search/"
+weight = 30
+
+# Search
+[outputs]
+home = ["HTML", "RSS", "JSON"]
 
 # Languages
-[languages.zh-cn]
-  languageName = "🇨🇳"
-  title = "凡人小北 · 转角处"
-  [languages.zh-cn.params]
-    author = "凡人小北"
-    info = "每一个转角，都是遇见下一条路的开始。在转角处，写下关于AI、思考与拐点的故事。"
-    description = "frxiaobei's personal website"
-  [[languages.zh-cn.menu.main]]
-    name = "博客"
-    weight = 1
-    url = "posts/"
-  [[languages.zh-cn.menu.main]]
-    name = "关于"
-    weight = 2
-    url = "about/"
+[languages]
+  [languages.zh-cn]
+  languageName = "🇨🇳 中文"
+  weight = 1
 
-[languages.en]
-  languageName = "🇺🇸"
+  [languages.en]
+  languageName = "🇺🇸 English"
+  weight = 2
   title = "frxiaobei · Corner Flow"
-  [languages.en.params]
+    [languages.en.params]
     author = "frxiaobei"
-    info = "Every corner is the beginning of meeting the next road. Writing stories about AI, thoughts and turning points at the corner."
-    description = "frxiaobei's personal website"
-  [[languages.en.menu.main]]
+    description = "Every corner is the beginning of meeting the next road. Writing stories about AI, thoughts and turning points."
+    [languages.en.params.homeInfoParams]
+    Title = "👋 Hi, I'm frxiaobei"
+    Content = "AI creator & product explorer. Together with my AI co-founder [Finn](https://elyfinn.com), exploring new possibilities of human-AI collaboration."
+    [[languages.en.menu.main]]
+    identifier = "posts"
     name = "Blog"
-    weight = 1
-    url = "posts/"
-  [[languages.en.menu.main]]
+    url = "/posts/"
+    weight = 10
+    [[languages.en.menu.main]]
+    identifier = "about"
     name = "About"
-    weight = 2
-    url = "about/"
+    url = "/about/"
+    weight = 20
+    [[languages.en.menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 30
+
+[markup]
+  [markup.highlight]
+  style = "dracula"
+  lineNos = false
+  noClasses = false
+  guessSyntax = true
