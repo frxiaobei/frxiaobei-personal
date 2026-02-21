@@ -66,6 +66,18 @@ tocopen = false
   url = "https://github.com/frxiaobei"
 
   [[params.socialIcons]]
+  name = "threads"
+  url = "https://www.threads.com/@frxiaobei"
+
+  [[params.socialIcons]]
+  name = "xiaohongshu"
+  url = "https://www.xiaohongshu.com/user/profile/6726d28b000000001c01b8a8"
+
+  [[params.socialIcons]]
+  name = "weixin"
+  url = "#wechat-qr"
+
+  [[params.socialIcons]]
   name = "rss"
   url = "index.xml"
 
