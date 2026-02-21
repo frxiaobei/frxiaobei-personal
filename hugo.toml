@@ -51,7 +51,11 @@ tocopen = false
   iconHeight = 35
 
   [params.profileMode]
-  enabled = true
+  enabled = false
+
+  [params.homeInfoParams]
+  Title = "👋 你好，我是凡人小北"
+  Content = "AI 创作者、产品探索者。和我的 AI 合伙人 [凡哥](https://elyfinn.com) 一起，探索人机协作的新可能。"
 
   [[params.socialIcons]]
   name = "elyfinn"
