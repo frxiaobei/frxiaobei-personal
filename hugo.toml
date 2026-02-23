@@ -17,6 +17,7 @@ disableXML = true
 minifyOutput = true
 
 [params]
+googleAnalyticsID = "G-PEVTF8NDTP"
 env = "production"
 author = "凡人小北"
 description = "每一个转角，都是遇见下一条路的开始。在转角处，写下关于AI、思考与拐点的故事。"
