@@ -53,7 +53,7 @@ You have the right to:
 If you have any questions:
 
 - Twitter/X: [@frxiaobei](https://x.com/frxiaobei)
-- Email: hi@frxiaobei.com
+- Email: frxiaobei@gmail.com
 
 ## Changes
 

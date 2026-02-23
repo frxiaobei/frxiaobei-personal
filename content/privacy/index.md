@@ -53,7 +53,7 @@ ShowBreadCrumbs: false
 如有任何问题，请通过以下方式联系：
 
 - Twitter/X: [@frxiaobei](https://x.com/frxiaobei)
-- Email: hi@frxiaobei.com
+- Email: frxiaobei@gmail.com
 
 ## 变更
 
