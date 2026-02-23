@@ -19,3 +19,9 @@ other = "你来到了一个未知的转角"
 
 [error_404_back]
 other = "归去来兮"
+
+[privacy]
+other = "隐私政策"
+
+[about]
+other = "关于"
