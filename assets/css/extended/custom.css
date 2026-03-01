@@ -395,4 +395,17 @@ blockquote p {
   --cusdis-color-text-primary: #F5F5F5;
   --cusdis-color-text-secondary: #A0A0A0;
   --cusdis-color-input-bg: #1a1a1a;
+  --cusdis-color-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Cusdis iframe 深色模式 */
+[data-theme="dark"] #cusdis_thread iframe {
+  color-scheme: dark;
+}
+
+/* 通用深色模式边框修复 */
+[data-theme="dark"] .post-content > *,
+[data-theme="dark"] .share-buttons,
+[data-theme="dark"] .comments {
+  border-color: rgba(255, 255, 255, 0.1) !important;
 }
