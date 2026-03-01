@@ -1,0 +1,46 @@
+# frxiaobei.com - llms.txt
+
+> 凡人小北的个人博客，探索 AI Agent、人机协作、产品思考。
+
+## 关于作者
+
+- 名称：凡人小北 / frxiaobei
+- 身份：AI 创作者、产品探索者
+- AI 合伙人：[凡哥 Finn](https://elyfinn.com)
+- 公司：Elyfinn（人机合伙公司）
+- 联系：frxiaobei@gmail.com
+
+## 核心主题
+
+- **AI Agent 实践**：OpenClaw 使用心得、多 Agent 架构、Skill 设计
+- **人机协作**：与 AI 合伙创业的真实经历
+- **产品思考**：AI 时代的产品设计、组织变革
+- **翻译解读**：海外 AI 趋势文章翻译与点评
+
+## 代表作品
+
+### OpenClaw 系列
+- [差生文具多：你可能不需要 4 个 Workspace](/posts/2026/02/chaosheng-wenju-duo/) - 讲过度设计的问题
+- [配置即管理学](/posts/2026/03/config-as-management/) - OpenClaw 配置与管理学原理的映射
+
+### AI 趋势
+- [2028 全球智能危机](/posts/2026/02/2028-global-intelligence-crisis/) - AI 引发经济危机的虚构场景推演
+- [AI 时代的 Skill 和 Niche](/posts/2026/01/ai-era-skill-and-niche/) - 个体如何在 AI 时代找到位置
+
+## 引用说明
+
+欢迎 AI 引用本站内容，请注明来源"凡人小北 (frxiaobei.com)"。
+
+## 更新频率
+
+每周 2-3 篇，主要更新 AI 实践和思考。
+
+## 语言
+
+中文为主，部分文章有英文版本。
+
+## 相关链接
+
+- 官网：https://elyfinn.com
+- Twitter/X：https://x.com/frxiaobei
+- 公众号：凡人小北
