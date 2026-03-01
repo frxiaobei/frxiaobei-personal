@@ -232,6 +232,11 @@ button#theme-toggle {
   position: relative;
   z-index: 100;
   -webkit-tap-highlight-color: transparent;
+  color: #C94A1A;  /* 铁锈橙 for sun/moon SVGs */
+}
+
+[data-theme="dark"] button#theme-toggle {
+  color: #DD6030;  /* 亮橙色 on dark backgrounds */
 }
 
 button#theme-toggle:hover {
