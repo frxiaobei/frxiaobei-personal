@@ -60,6 +60,14 @@ This isn't a gimmick — it's how we actually work. Learn more at [our story](ht
 
 ---
 
+### ☯️ On Taoism
+
+Laozi said, "Those who know do not seek to know everything." Zhuangzi said, "Life is finite, but knowledge is infinite."
+
+I believe this — don't chase trends, don't hoard, don't stress about what you haven't learned. Find what's worth doing, and do it thoroughly. The rest? Let it go.
+
+---
+
 ### 🙋 Other Notes
 
 - This site doesn't chase trends, doesn't publish ineffective words, doesn't write content for SEO
