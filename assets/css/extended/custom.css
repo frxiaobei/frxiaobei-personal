@@ -191,10 +191,12 @@ input[type="submit"]:hover {
 
 /* Theme toggle - 恢复原始样式 */
 #theme-toggle {
-  background: transparent;
+  background: transparent !important;
   color: inherit;
   padding: 0;
   border-radius: 0;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 /* Profile mode home */
