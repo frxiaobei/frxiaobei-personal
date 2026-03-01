@@ -331,3 +331,49 @@ button#theme-toggle svg {
 #searchResults .focus {
   border-width: 2px;
 }
+
+/* ===== 深色模式适配 ===== */
+
+/* TOC 深色模式 */
+[data-theme="dark"] .toc {
+  background: #252525;
+}
+
+/* 文章导航深色模式 */
+[data-theme="dark"] .paginav {
+  background: #252525 !important;
+}
+
+[data-theme="dark"] .paginav a:hover {
+  background: #333333;
+}
+
+/* 标签深色模式 */
+[data-theme="dark"] .post-tags a {
+  background: #252525;
+}
+
+[data-theme="dark"] .post-tags a:hover {
+  background: #333333;
+}
+
+/* 引用块样式（修复红色文字问题）*/
+blockquote {
+  border-left: 3px solid var(--primary);
+  padding-left: 1em;
+  margin-left: 0;
+  color: var(--content);
+  font-style: italic;
+}
+
+blockquote p {
+  color: inherit;
+}
+
+/* Cusdis 评论深色模式 */
+[data-theme="dark"] #cusdis_thread {
+  --cusdis-color-bg: #252525;
+  --cusdis-color-text-primary: #F5F5F5;
+  --cusdis-color-text-secondary: #A0A0A0;
+  --cusdis-color-input-bg: #1a1a1a;
+}
