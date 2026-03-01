@@ -351,11 +351,11 @@ button#theme-toggle svg {
 }
 
 [data-theme="dark"] .toc a {
-  color: #E0E0E0;
+  color: #DD6030 !important;  /* 亮橙色，和正文链接一致 */
 }
 
 [data-theme="dark"] .toc a:hover {
-  color: var(--primary-light);
+  color: #E8824A !important;
 }
 
 /* 文章导航深色模式 */
