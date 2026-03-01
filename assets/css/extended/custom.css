@@ -190,13 +190,26 @@ input[type="submit"]:hover {
 }
 
 /* Theme toggle - 确保不被其他样式影响 */
+.logo-switches {
+  position: relative;
+  z-index: 2;
+}
+
 button#theme-toggle {
-  all: revert;
   background: transparent !important;
   border: none !important;
   cursor: pointer !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  line-height: 1;
   font-size: 26px;
   margin: auto 4px;
+  pointer-events: auto;
+  position: relative;
+  z-index: 2;
 }
 
 /* Profile mode home */
