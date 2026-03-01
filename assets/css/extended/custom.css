@@ -365,12 +365,17 @@ button#theme-toggle svg {
 }
 
 [data-theme="dark"] .paginav a {
-  color: #E0E0E0;
+  color: #DD6030 !important;  /* 亮橙色 */
 }
 
 [data-theme="dark"] .paginav a:hover {
   background: #333333;
-  color: var(--primary-light);
+  color: #E8824A !important;
+}
+
+/* 文章导航标题（上一篇/下一篇文字）*/
+[data-theme="dark"] .paginav .title {
+  color: #A0A0A0 !important;  /* 灰色提示文字 */
 }
 
 /* 标签深色模式 */
