@@ -1,0 +1,118 @@
+/*
+  Elyfinn Orange Theme Overrides for PaperMod
+  Loaded automatically by PaperMod from assets/css/extended/
+
+  Brand palette:
+  - Primary:   #e67e22
+  - Accent:    #d35400
+  - Light bg:  #fef3e7
+  - Dark bg:   #2c3e50
+  - Text:      #2c3e50 / #333
+*/
+
+:root {
+  /* Keep PaperMod vars, but tune a few key surfaces */
+  --code-block-bg: #2c3e50; /* code blocks */
+}
+
+:root[data-theme="dark"] {
+  /* Slightly cooler/cleaner code background in dark mode */
+  --code-block-bg: #1f2a36;
+}
+
+/* Links */
+a,
+.post-content a,
+.toc a {
+  color: #e67e22;
+}
+
+a:hover,
+.post-content a:hover,
+.toc a:hover {
+  color: #d35400;
+}
+
+/* Make the underline/box-shadow accent match the brand */
+.post-content a,
+.post-meta .i18n_list li a,
+.toc a:hover {
+  box-shadow: 0 1px 0 rgba(230, 126, 34, 0.65);
+}
+
+.post-content a code {
+  box-shadow: 0 -1px 0 #e67e22 inset;
+}
+
+/* Navbar active + hover accent */
+#menu .active {
+  color: #e67e22;
+  border-bottom-color: #e67e22;
+}
+
+.nav a:hover,
+#menu a:hover,
+.logo a:hover {
+  color: #e67e22;
+}
+
+/* Post list title hover */
+.post-entry:hover .entry-header h2,
+.post-entry:hover .entry-header h1 {
+  color: #e67e22;
+}
+
+/* Code blocks */
+div.highlight,
+pre {
+  background: var(--code-block-bg);
+}
+
+/* Inline code */
+code {
+  border-color: rgba(230, 126, 34, 0.25);
+}
+
+/* Blockquotes: light orange background + orange left border */
+.post-content blockquote {
+  background: #fef3e7;
+  border-inline-start-color: #e67e22;
+  border-radius: 6px;
+  padding: 10px 14px;
+}
+
+:root[data-theme="dark"] .post-content blockquote {
+  /* Keep some warmth, but avoid overpowering the dark theme */
+  background: rgba(230, 126, 34, 0.12);
+  border-inline-start-color: #e67e22;
+}
+
+/* Tags / buttons-ish components */
+.post-tags a {
+  border-color: rgba(230, 126, 34, 0.25);
+}
+
+.post-tags a:hover,
+.paginav a:hover {
+  background: #fef3e7;
+}
+
+.pagination a {
+  background: #e67e22;
+  color: #fff;
+}
+
+.pagination a:hover {
+  background: #d35400;
+}
+
+/* Text selection */
+::selection {
+  background: #fef3e7;
+  color: #2c3e50;
+}
+
+:root[data-theme="dark"] ::selection {
+  background: rgba(230, 126, 34, 0.35);
+  color: #fff;
+}
