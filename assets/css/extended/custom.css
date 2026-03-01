@@ -53,13 +53,25 @@
 
 /* Force white background on body and main */
 body {
-  font-family: "Inter", "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  /* 优化中文字体：系统字体优先，自动选择最佳渲染 */
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", 
+               "Microsoft YaHei", "Segoe UI", "Noto Sans SC", "Source Han Sans SC", 
+               "Inter", sans-serif;
   background: #FFFFFF !important;
   color: var(--content);
 }
 
 .main {
   background: #FFFFFF !important;
+}
+
+/* 修复首页 .list 背景色 */
+.list {
+  background: #FFFFFF !important;
+}
+
+[data-theme="dark"] .list {
+  background: #1a1a1a !important;
 }
 
 /* Header */
@@ -99,17 +111,38 @@ a:hover {
   color: var(--primary-dark);
 }
 
-/* Post cards */
+/* Post cards - 恢复橘色条动画 */
 .post-entry {
+  position: relative;
+  overflow: hidden;
   background: var(--card-bg);
   border-radius: var(--radius);
   border: 1px solid var(--border);
   transition: all 0.3s ease;
 }
 
+/* 顶部橘色条（hover 时从左到右滑出） */
+.post-entry::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-light));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
 .post-entry:hover {
-  border-color: var(--primary);
-  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.1);
+  transform: translateY(-4px);
+  border-color: rgba(255, 107, 53, 0.3);
+  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.12);
+}
+
+.post-entry:hover::before {
+  transform: scaleX(1);
 }
 
 /* Post title accent */
