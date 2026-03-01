@@ -180,6 +180,10 @@ defaultContentLanguageInSubdir = false
     [languages.en.params]
     author = "frxiaobei"
     description = "Every corner is the beginning of meeting the next road. Writing stories about AI, thoughts and turning points."
+    [languages.en.params.label]
+    text = "frxiaobei"
+    icon = "/images/avatar.jpg"
+    iconHeight = 35
     [languages.en.params.profileMode]
     enabled = false
     title = "frxiaobei"
