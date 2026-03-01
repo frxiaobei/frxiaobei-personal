@@ -53,12 +53,19 @@
 
 /* Force white background on body and main */
 body {
-  /* 优化中文字体：系统字体优先，自动选择最佳渲染 */
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", 
-               "Microsoft YaHei", "Segoe UI", "Noto Sans SC", "Source Han Sans SC", 
-               "Inter", sans-serif;
+  /* 霞鹜文楷屏幕阅读版 + 系统字体 fallback */
+  font-family: "LXGW WenKai Screen", -apple-system, BlinkMacSystemFont, 
+               "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
   background: #FFFFFF !important;
   color: var(--content);
+}
+
+/* 正文段落间距 */
+.post-content p {
+  margin-bottom: 1.5em;
 }
 
 .main {
