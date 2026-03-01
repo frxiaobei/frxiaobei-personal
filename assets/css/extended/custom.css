@@ -118,6 +118,15 @@ a:hover {
   color: var(--primary-dark);
 }
 
+/* 深色模式链接用更亮的橙色 */
+[data-theme="dark"] a {
+  color: #DD6030;
+}
+
+[data-theme="dark"] a:hover {
+  color: #E8824A;
+}
+
 /* Post cards - 恢复橘色条动画 */
 .post-entry {
   position: relative;
@@ -413,4 +422,15 @@ blockquote p {
 [data-theme="dark"] .share-buttons,
 [data-theme="dark"] .comments {
   border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* 分割线样式 */
+hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 2em 0;
+}
+
+[data-theme="dark"] hr {
+  border-top-color: rgba(255, 255, 255, 0.1);
 }
