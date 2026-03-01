@@ -9,6 +9,8 @@ tags:
   - personal growth
   - career development
 description: In the AI era, there's no comfort zone. You have to squirm like a loach, finding cracks to squeeze through. But squirming isn't enough—you need to accumulate something with every step. Skills keep you fed, Niche makes you irreplaceable. You need both.
+cover:
+  image: cover.png
 ---
 
 In the AI era, most people's futures are up in the air.

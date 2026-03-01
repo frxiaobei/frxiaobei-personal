@@ -9,6 +9,8 @@ tags:
   - 个人成长
   - 职业发展
 description: AI 时代没有舒适区，个体要像泥鳅一样找缝隙。但光钻不够，得每一步都能攒下点什么。Skill 让你有饭吃，Niche 让你不可替代，两个都得攒。
+cover:
+  image: cover.png
 ---
 
 AI 时代，大多数人的未来其实都悬着。

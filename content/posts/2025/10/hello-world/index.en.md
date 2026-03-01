@@ -4,6 +4,8 @@ date: 2025-10-27T17:25:00+08:00
 draft: false
 tags: ["introduction", "expression system", "management", "creation"]
 description: "An opening from a rational creator: who I am, why this site exists, and what I plan to write here."
+cover:
+  image: cover.png
 ---
 
 Hi, I'm frxiaobei.

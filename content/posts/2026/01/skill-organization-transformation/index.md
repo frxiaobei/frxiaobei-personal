@@ -9,6 +9,8 @@ tags:
   - MCP
   - AI Native
 description: 从 MCP 的教训到 Skill 的本质，探讨 AI 时代组织变革的真实挑战。不是工具的问题，而是工作方式和组织架构必须改变。
+cover:
+  image: cover.png
 ---
 最近中推圈在疯传"怎么写 Claude Skills"。
 
