@@ -163,8 +163,10 @@ pre code {
   padding: 0;
 }
 
-/* Buttons */
-.button, button, input[type="submit"] {
+/* Buttons - 排除 theme toggle */
+.button, 
+.post-content button,
+input[type="submit"] {
   background: var(--primary);
   color: white;
   border: none;
@@ -174,8 +176,18 @@ pre code {
   transition: background 0.2s ease;
 }
 
-.button:hover, button:hover, input[type="submit"]:hover {
+.button:hover, 
+.post-content button:hover,
+input[type="submit"]:hover {
   background: var(--primary-dark);
+}
+
+/* Theme toggle - 恢复原始样式 */
+#theme-toggle {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
 }
 
 /* Profile mode home */
