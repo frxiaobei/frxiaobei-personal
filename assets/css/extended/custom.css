@@ -25,7 +25,7 @@
   --content: var(--text-dark);
   --border: var(--card-border);
   --code-block-bg: #1f2a36;
-  --code-bg: rgba(255, 107, 53, 0.12);
+  --code-bg: rgba(201, 74, 26, 0.12);
   --hljs-bg: #1f2a36;
 
   --radius: 18px;
@@ -47,7 +47,7 @@
   --content: var(--text-dark);
   --border: var(--card-border);
   --code-block-bg: #0f1418;
-  --code-bg: rgba(255, 107, 53, 0.2);
+  --code-bg: rgba(201, 74, 26, 0.2);
   --hljs-bg: #0f1418;
 }
 
@@ -144,8 +144,8 @@ a:hover {
 
 .post-entry:hover {
   transform: translateY(-4px);
-  border-color: rgba(255, 107, 53, 0.3);
-  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.12);
+  border-color: rgba(201, 74, 26, 0.3);
+  box-shadow: 0 8px 24px rgba(201, 74, 26, 0.12);
 }
 
 .post-entry:hover::before {
@@ -230,7 +230,7 @@ button#theme-toggle {
 
 #searchbox input:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.15);
+  box-shadow: 0 0 0 3px rgba(201, 74, 26, 0.15);
   outline: none;
 }
 
@@ -247,7 +247,7 @@ button#theme-toggle {
 #searchResults li:hover,
 #searchResults .focus {
   border-color: var(--primary);
-  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.1);
+  box-shadow: 0 4px 12px rgba(201, 74, 26, 0.1);
   transform: translateY(-2px);
 }
 
