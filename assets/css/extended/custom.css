@@ -350,11 +350,17 @@ button#theme-toggle svg {
   border-left: 3px solid #DD6030;  /* 亮橙色，深色背景更醒目 */
 }
 
-[data-theme="dark"] .toc a {
+[data-theme="dark"] .toc a,
+[data-theme="dark"] .toc .inner a,
+[data-theme="dark"] .toc ul a,
+[data-theme="dark"] .toc li a {
   color: #DD6030 !important;  /* 亮橙色，和正文链接一致 */
 }
 
-[data-theme="dark"] .toc a:hover {
+[data-theme="dark"] .toc a:hover,
+[data-theme="dark"] .toc .inner a:hover,
+[data-theme="dark"] .toc ul a:hover,
+[data-theme="dark"] .toc li a:hover {
   color: #E8824A !important;
 }
 
