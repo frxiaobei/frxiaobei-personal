@@ -375,14 +375,15 @@ button#theme-toggle svg {
 
 /* 标签深色模式 */
 [data-theme="dark"] .post-tags a {
-  background: #252525;
-  color: #E0E0E0;
-  border-color: rgba(255, 255, 255, 0.1);
+  background: #252525 !important;
+  color: #E0E0E0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
 [data-theme="dark"] .post-tags a:hover {
-  background: #333333;
-  color: var(--primary-light);
+  background: #333333 !important;
+  color: var(--primary-light) !important;
+  border-color: var(--primary-light) !important;
 }
 
 /* 引用块样式（修复红色文字问题）*/
