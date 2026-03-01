@@ -172,6 +172,11 @@ defaultContentLanguageInSubdir = false
     name = "搜索"
     url = "/search/"
     weight = 30
+    [[languages.zh-cn.menu.main]]
+    identifier = "subscribe"
+    name = "订阅"
+    url = "/newsletter/"
+    weight = 40
 
   [languages.en]
   languageName = "🇺🇸"
@@ -215,6 +220,11 @@ defaultContentLanguageInSubdir = false
     name = "Search"
     url = "/search/"
     weight = 30
+    [[languages.en.menu.main]]
+    identifier = "subscribe"
+    name = "Subscribe"
+    url = "/newsletter/"
+    weight = 40
 
 [markup]
   [markup.highlight]
