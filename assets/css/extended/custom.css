@@ -338,6 +338,7 @@ button#theme-toggle svg {
 [data-theme="dark"] .toc {
   background: #252525;
   color: #F5F5F5;
+  border-left: 3px solid #DD6030;  /* 亮橙色，深色背景更醒目 */
 }
 
 [data-theme="dark"] .toc a {
