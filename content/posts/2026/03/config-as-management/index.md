@@ -12,8 +12,6 @@ cover:
   image: 01-cover.png
 ---
 
-![封面图](01-cover.png)
-
 上篇「差生文具多」聊了一个现象：很多人一上来就搞 4 个 Workspace，结果每个都空着。
 
 写完之后我发现，这不只是 OpenClaw 的问题。

@@ -12,8 +12,6 @@ cover:
   image: 01-cover-lobster.png
 ---
 
-![封面图](01-cover-lobster.png)
-
 ## 一个反直觉的观察
 
 最近在 OpenClaw 社区里看到一个有趣的现象：很多人刚上手，就急着配置一堆 workspace。
