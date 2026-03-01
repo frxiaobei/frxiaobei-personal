@@ -53,9 +53,9 @@
 
 /* Force white background on body and main */
 body {
-  /* Inter（英文）+ 霞鹜文楷（中文）*/
-  font-family: "Inter", "LXGW WenKai Screen", -apple-system, BlinkMacSystemFont, 
-               "PingFang SC", "Microsoft YaHei", sans-serif;
+  /* Lora（英文衬线）+ 霞鹜文楷（中文楷书）*/
+  font-family: "Lora", "LXGW WenKai Screen", -apple-system, BlinkMacSystemFont, 
+               "PingFang SC", "Microsoft YaHei", serif;
   font-size: 17px;
   line-height: 1.8;
   letter-spacing: 0.02em;
