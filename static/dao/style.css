@@ -1,0 +1,162 @@
+:root {
+  --bg: #0d0d0d;
+  --bg-soft: #141414;
+  --text: #f5f5f5;
+  --muted: #a0a0a0;
+  --accent: #dd6030;
+  --maxw: 760px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  font-family: "LXGW WenKai Screen", "Lora", "Songti SC", "STSong", serif;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+main {
+  display: block;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-image: url("meditation-taoist.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__veil {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 30%, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.75) 65%, rgba(0, 0, 0, 0.92) 100%);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 16px;
+}
+
+.hero__title {
+  font-family: "FZQingKeBenYueSong", "STKaiti", "KaiTi", serif;
+  font-size: clamp(3.5rem, 10vw, 9rem);
+  letter-spacing: 0.2em;
+  text-indent: 0.2em;
+  color: var(--text);
+}
+
+.hero__subtitle {
+  font-size: clamp(1rem, 3.2vw, 1.6rem);
+  color: var(--muted);
+}
+
+.hero__scroll {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--muted);
+  font-size: 1.2rem;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  animation: breathe 2.8s ease-in-out infinite;
+  z-index: 1;
+}
+
+.section {
+  background: var(--bg);
+  padding: 96px 24px;
+}
+
+.section:nth-of-type(2n) {
+  background: var(--bg-soft);
+}
+
+.section__inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+
+h2 {
+  margin: 0 0 24px 0;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.prose p {
+  margin: 0 0 12px 0;
+  color: var(--text);
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+.footer {
+  padding: 40px 24px 64px;
+  display: grid;
+  gap: 12px;
+  place-items: center;
+  text-align: center;
+  color: var(--muted);
+  background: #0a0a0a;
+}
+
+.footer__link {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 4px;
+  transition: border-color 0.2s ease;
+}
+
+.footer__link:hover {
+  border-color: var(--accent);
+}
+
+.footer__copy {
+  font-size: 0.9rem;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    opacity: 0.9;
+    transform: translateX(-50%) translateY(6px);
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 72px 20px;
+  }
+
+  .hero__title {
+    letter-spacing: 0.12em;
+  }
+}
