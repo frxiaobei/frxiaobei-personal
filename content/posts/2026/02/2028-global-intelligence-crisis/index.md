@@ -9,8 +9,8 @@ tags:
   - 未来预测
 description: 如果 AI 的乐观判断继续正确，而这恰恰是利空呢？CitriniResearch 从 2028 年回望，推演 AI 如何引发连锁经济危机。
 cover:
-  image: cover.jpeg
-  alt: "The 2028 Global Intelligence Crisis"
+  image: cover-new.png
+  alt: "2028 全球智能危机"
 ---
 
 > **译者说**：这篇文章来自 [CitriniResearch](https://www.citriniresearch.com/p/2028gic)，我觉得挺有意思，翻译分享给大家。作者把自己放到 2028 年，回头看 AI 怎么一步步引发经济危机。虚构场景，但逻辑链条值得思考。
