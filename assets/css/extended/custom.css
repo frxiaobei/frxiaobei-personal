@@ -237,6 +237,23 @@ button#theme-toggle {
   font-weight: 600;
 }
 
+/* ===== 文章导航（上一篇/下一篇）===== */
+.paginav {
+  background: #FDFCFA;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.paginav a {
+  padding: 16px;
+  border-color: var(--border);
+}
+
+.paginav a:hover {
+  background: #FAF8F5;
+  border-color: var(--primary);
+}
+
 /* ===== 搜索框样式 ===== */
 #searchbox input {
   padding: 12px 18px;
