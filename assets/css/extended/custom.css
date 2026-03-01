@@ -1,6 +1,5 @@
 /*
   Elyfinn Brand Theme for PaperMod
-  Loaded automatically by PaperMod from assets/css/extended/
 */
 
 :root {
@@ -9,16 +8,17 @@
   --primary-light: #FF8A5C;
   --primary-dark: #E55A28;
 
+  /* Force pure white background */
+  --theme: #FFFFFF !important;
+  --entry: #FFFFFF !important;
   --cream: #FFFFFF;
   --cream-dark: #FFFFFF;
   --text-dark: #2D2D2D;
   --text-muted: #6B6B6B;
-  --card-bg: #ffffff;
+  --card-bg: #FFFFFF;
   --card-border: rgba(0, 0, 0, 0.08);
 
   /* PaperMod surface mapping */
-  --theme: var(--cream);
-  --entry: var(--card-bg);
   --primary-text: var(--text-dark);
   --secondary: var(--text-muted);
   --tertiary: rgba(45, 45, 45, 0.08);
@@ -29,10 +29,11 @@
   --hljs-bg: #1f2a36;
 
   --radius: 18px;
-  --brand-gradient: linear-gradient(135deg, #FF6B35 0%, #E55A28 25%, #C43D10 50%, #8B2508 75%, #4A1505 100%);
 }
 
 :root[data-theme="dark"] {
+  --theme: #1a1a1a !important;
+  --entry: #252525 !important;
   --cream: #1a1a1a;
   --cream-dark: #121212;
   --text-dark: #F5F5F5;
@@ -40,8 +41,6 @@
   --card-bg: #252525;
   --card-border: rgba(255, 255, 255, 0.1);
 
-  --theme: var(--cream);
-  --entry: var(--card-bg);
   --primary-text: var(--text-dark);
   --secondary: var(--text-muted);
   --tertiary: rgba(245, 245, 245, 0.1);
@@ -52,242 +51,101 @@
   --hljs-bg: #0f1418;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --cream: #1a1a1a;
-    --cream-dark: #121212;
-    --text-dark: #F5F5F5;
-    --text-muted: #A0A0A0;
-    --card-bg: #252525;
-    --card-border: rgba(255, 255, 255, 0.1);
-
-    --theme: var(--cream);
-    --entry: var(--card-bg);
-    --primary-text: var(--text-dark);
-    --secondary: var(--text-muted);
-    --tertiary: rgba(245, 245, 245, 0.1);
-    --content: var(--text-dark);
-    --border: var(--card-border);
-    --code-block-bg: #0f1418;
-    --code-bg: rgba(255, 107, 53, 0.2);
-    --hljs-bg: #0f1418;
-  }
-}
-
-/* Typography */
+/* Force white background on body and main */
 body {
   font-family: "Inter", "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
-  background: var(--theme);
+  background: #FFFFFF !important;
   color: var(--content);
+}
+
+.main {
+  background: #FFFFFF !important;
 }
 
 /* Header */
 .header {
-  background: #FFFFFF;
+  background: #FFFFFF !important;
   border-bottom: 1px solid var(--border);
-}
-
-.logo a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 700;
-  letter-spacing: 0.2px;
-}
-
-.logo a img {
-  width: auto;
-  height: 36px;
-  filter: drop-shadow(0 6px 16px rgba(255, 107, 53, 0.25));
-}
-
-#menu a {
-  font-weight: 600;
-}
-
-#menu .active,
-#menu a:hover,
-.nav a:hover {
-  color: var(--primary);
-  border-bottom-color: var(--primary);
-}
-
-/* Home + post list cards */
-.post-entry {
-  border: 1px solid var(--card-border);
-  border-radius: 18px;
-  background: var(--card-bg);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.04);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.post-entry::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 4px;
-  background: linear-gradient(90deg, #FF6B35, #FF8A5C);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-
-.post-entry:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.08);
-  border-color: rgba(255, 107, 53, 0.35);
-}
-
-.post-entry:hover::before {
-  transform: scaleX(1);
-}
-
-.post-entry:hover .entry-header h2,
-.post-entry:hover .entry-header h1 {
-  color: var(--primary);
-}
-
-/* Links */
-a,
-.post-content a,
-.toc a {
-  color: var(--primary);
-}
-
-a:hover,
-.post-content a:hover,
-.toc a:hover {
-  color: var(--primary-dark);
-}
-
-.post-content a {
-  box-shadow: 0 1px 0 rgba(255, 107, 53, 0.4);
-}
-
-.post-content a code {
-  box-shadow: 0 -1px 0 var(--primary) inset;
-}
-
-/* Buttons and tags */
-.post-tags a,
-.paginav a,
-.pagination a {
-  border-radius: 999px;
-}
-
-.post-tags a:hover,
-.paginav a:hover {
-  background: rgba(255, 107, 53, 0.12);
-}
-
-.pagination a {
-  background: var(--primary);
-  color: #fff;
-  border-color: var(--primary);
-}
-
-.pagination a:hover {
-  background: var(--primary-dark);
-}
-
-/* Blockquotes */
-.post-content blockquote {
-  background: var(--cream-dark);
-  border-inline-start-color: var(--primary);
-  border-radius: 12px;
-  padding: 12px 16px;
-}
-
-:root[data-theme="dark"] .post-content blockquote {
-  background: rgba(255, 107, 53, 0.1);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .post-content blockquote {
-    background: rgba(255, 107, 53, 0.1);
-  }
-}
-
-/* Code blocks */
-pre,
-code,
-div.highlight {
-  border-radius: 12px;
-}
-
-pre,
-div.highlight {
-  background: var(--code-block-bg);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-code {
-  background: var(--code-bg);
-  border-color: rgba(255, 107, 53, 0.25);
 }
 
 /* Footer */
 .footer {
+  background: #FFFFFF !important;
   border-top: 1px solid var(--border);
-  background: #FFFFFF;
 }
 
-.elyfinn-footer {
-  display: grid;
-  gap: 12px;
-  justify-items: center;
-  margin-top: 18px;
-  text-align: center;
+/* Dark mode overrides */
+[data-theme="dark"] body,
+[data-theme="dark"] .main,
+[data-theme="dark"] .header,
+[data-theme="dark"] .footer {
+  background: #1a1a1a !important;
 }
 
-.elyfinn-footer__brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
+  color: var(--primary-text);
 }
 
-.elyfinn-footer__brand img {
-  height: 28px;
-  width: auto;
-}
-
-.elyfinn-footer__links a {
-  margin: 0 10px;
-  color: inherit;
+/* Links */
+a {
+  color: var(--primary);
   text-decoration: none;
-  font-weight: 600;
+  transition: color 0.2s ease;
 }
 
-.elyfinn-footer__links a:hover {
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* Post cards */
+.post-entry {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.post-entry:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.1);
+}
+
+/* Post title accent */
+.post-entry:hover .entry-header h2 {
   color: var(--primary);
 }
 
-/* Selection */
-::selection {
-  background: rgba(255, 107, 53, 0.2);
-  color: var(--text-dark);
+/* Code blocks */
+code {
+  background: var(--code-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
 }
 
-:root[data-theme="dark"] ::selection {
-  color: #fff;
+pre code {
+  background: transparent;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) ::selection {
-    color: #fff;
-  }
+/* Buttons */
+.button, button, input[type="submit"] {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
 }
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .logo a {
-    gap: 8px;
-  }
+.button:hover, button:hover, input[type="submit"]:hover {
+  background: var(--primary-dark);
+}
 
-  .post-entry {
-    border-radius: 16px;
-  }
+/* Profile mode home */
+.profile .profile_inner h1 {
+  color: var(--primary);
 }
