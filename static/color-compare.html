@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>深色模式边框颜色对比</title>
+  <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "LXGW WenKai Screen", serif;
+      background: #1a1a1a;
+      color: #F5F5F5;
+      padding: 40px;
+      line-height: 1.8;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #F5F5F5;
+    }
+    .container {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: #252525;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      width: 350px;
+    }
+    .card h2 {
+      font-size: 14px;
+      color: #A0A0A0;
+      margin-bottom: 12px;
+    }
+    .card h3 {
+      font-size: 16px;
+      margin-bottom: 16px;
+      color: #F5F5F5;
+    }
+    .card ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+    .card li {
+      margin: 8px 0;
+    }
+    .card a {
+      color: #E0E0E0;
+      text-decoration: none;
+    }
+    .card a:hover {
+      color: #DD6030;
+    }
+    
+    /* 方案 A: 原色 #C94A1A */
+    .option-a {
+      border-left: 3px solid #C94A1A;
+    }
+    .option-a .color-info {
+      color: #C94A1A;
+    }
+    
+    /* 方案 B: 亮色 #DD6030 */
+    .option-b {
+      border-left: 3px solid #DD6030;
+    }
+    .option-b .color-info {
+      color: #DD6030;
+    }
+    
+    /* 方案 C: 更亮 #E8824A */
+    .option-c {
+      border-left: 3px solid #E8824A;
+    }
+    .option-c .color-info {
+      color: #E8824A;
+    }
+
+    .color-swatch {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>深色模式 TOC 边框颜色对比</h1>
+  
+  <div class="container">
+    <!-- 方案 A -->
+    <div class="card option-a">
+      <h2>方案 A: 原色（当前）</h2>
+      <h3>
+        <span class="color-swatch" style="background: #C94A1A;"></span>
+        <span class="color-info">#C94A1A</span>
+      </h3>
+      <details open>
+        <summary>▼ Table of Contents</summary>
+        <ul>
+          <li><a href="#">一张映射表</a></li>
+          <li><a href="#">Workspace = 部门</a></li>
+          <li><a href="#">Skill vs Agent = 培训 vs 招人</a></li>
+          <li><a href="#">Memory = 知识管理</a></li>
+          <li><a href="#">Context Window = 认知负荷</a></li>
+        </ul>
+      </details>
+    </div>
+    
+    <!-- 方案 B -->
+    <div class="card option-b">
+      <h2>方案 B: 亮橙</h2>
+      <h3>
+        <span class="color-swatch" style="background: #DD6030;"></span>
+        <span class="color-info">#DD6030</span>
+      </h3>
+      <details open>
+        <summary>▼ Table of Contents</summary>
+        <ul>
+          <li><a href="#">一张映射表</a></li>
+          <li><a href="#">Workspace = 部门</a></li>
+          <li><a href="#">Skill vs Agent = 培训 vs 招人</a></li>
+          <li><a href="#">Memory = 知识管理</a></li>
+          <li><a href="#">Context Window = 认知负荷</a></li>
+        </ul>
+      </details>
+    </div>
+    
+    <!-- 方案 C -->
+    <div class="card option-c">
+      <h2>方案 C: 更亮</h2>
+      <h3>
+        <span class="color-swatch" style="background: #E8824A;"></span>
+        <span class="color-info">#E8824A</span>
+      </h3>
+      <details open>
+        <summary>▼ Table of Contents</summary>
+        <ul>
+          <li><a href="#">一张映射表</a></li>
+          <li><a href="#">Workspace = 部门</a></li>
+          <li><a href="#">Skill vs Agent = 培训 vs 招人</a></li>
+          <li><a href="#">Memory = 知识管理</a></li>
+          <li><a href="#">Context Window = 认知负荷</a></li>
+        </ul>
+      </details>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>在深色背景 #252525 上对比三种橙色边框</p>
+    <p>A: 铁锈橙原色 | B: primary-light | C: 更高亮度</p>
+  </div>
+</body>
+</html>
