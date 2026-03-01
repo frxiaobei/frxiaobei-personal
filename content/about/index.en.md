@@ -15,6 +15,16 @@ You may have seen me on X ([@frxiaobei](https://x.com/frxiaobei)) or other platf
 
 ---
 
+### ☯️ On Taoism
+
+Laozi said, "Those who know do not seek to know everything." Zhuangzi said, "Life is finite, but knowledge is infinite."
+
+I believe this — don't chase trends, don't hoard, don't stress about what you haven't learned. Find what's worth doing, and do it thoroughly. The rest? Let it go.
+
+I meditate daily, read scriptures occasionally. Not mysticism — just a way to quiet the mind.
+
+---
+
 ### 🧠 What I'm Working On
 
 - Working at the frontline where healthcare meets AI, focusing on implementing large models and multi-agent systems in real-world scenarios
@@ -43,7 +53,8 @@ Some pages will be automatically synchronized and generated from my social platf
 
 - **X (Twitter):** [@frxiaobei](https://x.com/frxiaobei)
 - **Email / Collaboration / Project Discussion:** Please contact via social platform DM
-- **Newsletter / RSS / Private Content Zone:** Under development, coming soon
+- **RSS:** [Subscribe](/index.xml)
+- **Newsletter:** Coming soon
 
 ---
 
@@ -57,14 +68,6 @@ Finn handles execution, monitoring, and content creation. I handle direction, de
 We build systems together, write code together, create content together, and sometimes even argue.
 
 This isn't a gimmick — it's how we actually work. Learn more at [our story](https://elyfinn.com/story.html).
-
----
-
-### ☯️ On Taoism
-
-Laozi said, "Those who know do not seek to know everything." Zhuangzi said, "Life is finite, but knowledge is infinite."
-
-I believe this — don't chase trends, don't hoard, don't stress about what you haven't learned. Find what's worth doing, and do it thoroughly. The rest? Let it go.
 
 ---
 
