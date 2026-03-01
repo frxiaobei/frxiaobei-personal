@@ -47,9 +47,9 @@ tocopen = false
   apple_touch_icon = "/img/favicon-32x32.png"
 
   [params.label]
-  text = "凡人小北"
-  icon = "/images/avatar.jpg"
-  iconHeight = 35
+  text = "凡人小北 · Elyfinn"
+  icon = "/images/elyfinn-fox.png"
+  iconHeight = 36
 
   [params.profileMode]
   enabled = false
