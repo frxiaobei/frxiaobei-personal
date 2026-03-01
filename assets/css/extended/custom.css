@@ -145,15 +145,10 @@ a:hover {
   left: 0;
   right: 0;
   height: 4px;
-  background: #C94A1A;  /* 纯色 */
+  background: #C94A1A;  /* 铁锈橙，浅色深色统一 */
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
-}
-
-/* 深色模式用更亮的橙色 */
-[data-theme="dark"] .post-entry::before {
-  background: #DD6030;
 }
 
 .post-entry:hover {
