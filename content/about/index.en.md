@@ -3,6 +3,8 @@ title: "About Me"
 date: 2025-10-27T17:25:00+08:00
 type: "page"
 description: "An introduction from an AI creator and product explorer, plus the motivation and direction behind this blog."
+cover:
+  image: cover.png
 ---
 
 Hi, I'm frxiaobei.

@@ -3,6 +3,8 @@ title: "关于我"
 date: 2025-10-27T17:25:00+08:00
 type: "page"
 description: "一个 AI 创作者、产品探索者的自我介绍，以及这个博客背后的动机与方向。"
+cover:
+  image: cover.png
 ---
 
 你好，我是凡人小北。
