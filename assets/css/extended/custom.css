@@ -239,14 +239,15 @@ button#theme-toggle {
 
 /* ===== 文章导航（上一篇/下一篇）===== */
 .paginav {
-  background: #FDFCFA;
-  border: 1px solid var(--border);
+  background: #FDFCFA !important;
+  border: 1px solid var(--border) !important;
   border-radius: 8px;
 }
 
 .paginav a {
   padding: 16px;
   border-color: var(--border);
+  background: transparent;
 }
 
 .paginav a:hover {
