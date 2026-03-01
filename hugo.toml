@@ -36,12 +36,12 @@ disableSpecial1stPost = false
 disableScrollToTop = false
 comments = true
 hidemeta = false
+hideSummary = false
+ShowToc = true
+TocOpen = false
 
   [params.footer]
   text = "[Elyfinn](https://elyfinn.com)"
-hideSummary = false
-showtoc = true
-tocopen = false
 
   [params.assets]
   favicon = "/img/favicon-16x16.png"
