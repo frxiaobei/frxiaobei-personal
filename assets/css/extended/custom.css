@@ -337,24 +337,42 @@ button#theme-toggle svg {
 /* TOC 深色模式 */
 [data-theme="dark"] .toc {
   background: #252525;
+  color: #F5F5F5;
+}
+
+[data-theme="dark"] .toc a {
+  color: #E0E0E0;
+}
+
+[data-theme="dark"] .toc a:hover {
+  color: var(--primary-light);
 }
 
 /* 文章导航深色模式 */
 [data-theme="dark"] .paginav {
   background: #252525 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="dark"] .paginav a {
+  color: #E0E0E0;
 }
 
 [data-theme="dark"] .paginav a:hover {
   background: #333333;
+  color: var(--primary-light);
 }
 
 /* 标签深色模式 */
 [data-theme="dark"] .post-tags a {
   background: #252525;
+  color: #E0E0E0;
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 [data-theme="dark"] .post-tags a:hover {
   background: #333333;
+  color: var(--primary-light);
 }
 
 /* 引用块样式（修复红色文字问题）*/
