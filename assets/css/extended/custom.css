@@ -10,7 +10,7 @@
   --primary-dark: #E55A28;
 
   --cream: #FFFFFF;
-  --cream-dark: #FAFAFA;
+  --cream-dark: #FFFFFF;
   --text-dark: #2D2D2D;
   --text-muted: #6B6B6B;
   --card-bg: #ffffff;
@@ -83,7 +83,7 @@ body {
 
 /* Header */
 .header {
-  background: linear-gradient(180deg, var(--cream-dark), rgba(255, 255, 255, 0));
+  background: #FFFFFF;
   border-bottom: 1px solid var(--border);
 }
 
@@ -231,7 +231,7 @@ code {
 /* Footer */
 .footer {
   border-top: 1px solid var(--border);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0), var(--cream-dark));
+  background: #FFFFFF;
 }
 
 .elyfinn-footer {
