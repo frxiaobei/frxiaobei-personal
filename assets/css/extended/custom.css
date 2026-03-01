@@ -3,10 +3,10 @@
 */
 
 :root {
-  /* Brand palette */
-  --primary: #FF6B35;
-  --primary-light: #FF8A5C;
-  --primary-dark: #E55A28;
+  /* Brand palette - 铁锈橙/朱砂色 */
+  --primary: #C94A1A;
+  --primary-light: #DD6030;
+  --primary-dark: #A83D15;
 
   /* Force pure white background */
   --theme: #FFFFFF !important;
