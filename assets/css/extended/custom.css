@@ -254,6 +254,19 @@ button#theme-toggle {
   border-color: var(--primary);
 }
 
+/* ===== 标签样式 ===== */
+.post-tags a {
+  background: #FDFCFA;
+  border: 1px solid var(--border);
+  color: var(--content);
+}
+
+.post-tags a:hover {
+  background: #FAF8F5;
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
 /* ===== 搜索框样式 ===== */
 #searchbox input {
   padding: 12px 18px;
