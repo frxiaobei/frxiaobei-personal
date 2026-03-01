@@ -204,6 +204,14 @@ button#theme-toggle {
   color: var(--primary);
 }
 
+/* 限制文章封面图最大高度 */
+.post-single .post-content > figure:first-child img,
+.entry-cover img {
+  max-height: 400px;
+  width: auto;
+  object-fit: contain;
+}
+
 /* ===== 搜索框样式 ===== */
 #searchbox input {
   padding: 12px 18px;
