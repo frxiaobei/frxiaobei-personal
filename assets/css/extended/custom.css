@@ -189,10 +189,22 @@ input[type="submit"]:hover {
   background: var(--primary-dark);
 }
 
-/* Theme toggle - 确保不被其他样式影响 */
+/* Theme toggle - 修复点击问题 */
+.logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.logo a {
+  flex-shrink: 0;
+}
+
 .logo-switches {
   position: relative;
-  z-index: 2;
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
 }
 
 button#theme-toggle {
@@ -202,14 +214,23 @@ button#theme-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
-  line-height: 1;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px;
   font-size: 26px;
-  margin: auto 4px;
-  pointer-events: auto;
+  margin: 0 4px;
+  pointer-events: auto !important;
   position: relative;
-  z-index: 2;
+  z-index: 100;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button#theme-toggle:hover {
+  opacity: 0.7;
+}
+
+button#theme-toggle svg {
+  pointer-events: none;
 }
 
 /* Profile mode home */
