@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字体对比 - frxiaobei.com</title>
+  <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      background: #f5f5f5;
+      padding: 40px 20px;
+    }
+    
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #333;
+    }
+    
+    .compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    
+    @media (max-width: 900px) {
+      .compare { grid-template-columns: 1fr; }
+    }
+    
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    
+    .card h2 {
+      font-size: 14px;
+      color: #FF6B35;
+      margin-bottom: 8px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+    }
+    
+    .card h3 {
+      font-size: 24px;
+      margin-bottom: 24px;
+      color: #2D2D2D;
+    }
+    
+    /* 方案 A：系统字体 */
+    .font-a {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", sans-serif;
+    }
+    
+    .font-a h3 { font-family: inherit; }
+    
+    /* 方案 B：霞鹜文楷 */
+    .font-b {
+      font-family: "LXGW WenKai Screen", -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    
+    .font-b h3 { font-family: inherit; }
+    
+    /* 正文样式 */
+    .content {
+      font-size: 17px;
+      line-height: 1.8;
+      letter-spacing: 0.02em;
+      color: #333;
+    }
+    
+    .content p {
+      margin-bottom: 1.5em;
+    }
+    
+    .content p:last-child {
+      margin-bottom: 0;
+    }
+    
+    .content strong {
+      color: #FF6B35;
+    }
+    
+    .content code {
+      background: rgba(255, 107, 53, 0.1);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    
+    blockquote {
+      border-left: 3px solid #FF6B35;
+      padding-left: 16px;
+      margin: 1.5em 0;
+      color: #666;
+      font-style: italic;
+    }
+    
+    .meta {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #999;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔤 字体方案对比</h1>
+    
+    <div class="compare">
+      <!-- 方案 A -->
+      <div class="card font-a">
+        <h2>方案 A</h2>
+        <h3>系统字体（苹方 / 微软雅黑）</h3>
+        <div class="content">
+          <p>AI 时代，大多数人的未来其实都悬着。早上刷到一条推，说个体要像泥鳅一样找缝隙、钻生态位。他说得对，我补充点我的想法：<strong>光钻不够，得每一步都能攒下点什么。</strong></p>
+          
+          <p>聊聊怎么钻、往哪钻、钻完之后怎么让它值回票价。</p>
+          
+          <blockquote>快很重要，但更重要的是方向感。千万别白跑，faster / smarter 这些词很燃，但有个事没说：你得先知道自己在朝哪个方向跑。</blockquote>
+          
+          <p>我判断一个人有没有在往上走，就看三点：解决的问题有没有变大，承担的责任有没有变重，做的事有没有被更多人复用和信任。</p>
+          
+          <p>很多人理解生态位，会去找别人不会的冷门技术。现实中更稳的路径是把几样你还行但不算顶尖的能力，组合成一个别人不好复制的位置。用 <code>OpenClaw</code> 配置你自己的 AI 合伙人，这就是一个例子。</p>
+        </div>
+        <div class="meta">
+          font-family: -apple-system, PingFang SC, Microsoft YaHei<br>
+          font-size: 17px | line-height: 1.8 | letter-spacing: 0.02em
+        </div>
+      </div>
+      
+      <!-- 方案 B -->
+      <div class="card font-b">
+        <h2>方案 B</h2>
+        <h3>霞鹜文楷（屏幕阅读版）</h3>
+        <div class="content">
+          <p>AI 时代，大多数人的未来其实都悬着。早上刷到一条推，说个体要像泥鳅一样找缝隙、钻生态位。他说得对，我补充点我的想法：<strong>光钻不够，得每一步都能攒下点什么。</strong></p>
+          
+          <p>聊聊怎么钻、往哪钻、钻完之后怎么让它值回票价。</p>
+          
+          <blockquote>快很重要，但更重要的是方向感。千万别白跑，faster / smarter 这些词很燃，但有个事没说：你得先知道自己在朝哪个方向跑。</blockquote>
+          
+          <p>我判断一个人有没有在往上走，就看三点：解决的问题有没有变大，承担的责任有没有变重，做的事有没有被更多人复用和信任。</p>
+          
+          <p>很多人理解生态位，会去找别人不会的冷门技术。现实中更稳的路径是把几样你还行但不算顶尖的能力，组合成一个别人不好复制的位置。用 <code>OpenClaw</code> 配置你自己的 AI 合伙人，这就是一个例子。</p>
+        </div>
+        <div class="meta">
+          font-family: "LXGW WenKai Screen"<br>
+          font-size: 17px | line-height: 1.8 | letter-spacing: 0.02em
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
