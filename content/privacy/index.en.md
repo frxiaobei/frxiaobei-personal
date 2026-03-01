@@ -7,13 +7,19 @@ ShowToc: false
 ShowBreadCrumbs: false
 ---
 
-Last updated: February 23, 2026
+Last updated: March 1, 2026
 
 ## Summary
 
 This is a personal blog. I don't actively collect or store your personal information. However, some third-party services are used to keep the site running smoothly.
 
 ## Third-Party Services
+
+### Google Tag Manager
+
+This site uses Google Tag Manager to manage tracking scripts. GTM itself doesn't collect personal data, but it loads other analytics tools (like Google Analytics).
+
+See [Google Tag Manager Terms of Service](https://marketingplatform.google.com/about/analytics/tag-manager/use-policy/)
 
 ### Google Analytics
 

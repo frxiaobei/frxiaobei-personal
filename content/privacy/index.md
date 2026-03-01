@@ -7,13 +7,19 @@ ShowToc: false
 ShowBreadCrumbs: false
 ---
 
-最后更新：2026 年 2 月 23 日
+最后更新：2026 年 3 月 1 日
 
 ## 简要说明
 
 本站是个人博客，不会主动收集或存储您的个人信息。但为了网站正常运行和改善体验，使用了一些第三方服务。
 
 ## 使用的第三方服务
+
+### Google Tag Manager
+
+本站使用 Google Tag Manager 管理网站追踪代码。GTM 本身不收集个人数据，但会加载其他分析工具（如 Google Analytics）。
+
+详见 [Google Tag Manager 使用条款](https://marketingplatform.google.com/about/analytics/tag-manager/use-policy/)
 
 ### Google Analytics
 
