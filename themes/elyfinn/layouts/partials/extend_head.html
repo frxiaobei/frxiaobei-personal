@@ -11,6 +11,11 @@
 <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
+{{- /* Elyfinn brand CSS */ -}}
+{{- $elyStyle := resources.Get "css/elyfinn.css" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $elyStyle.RelPermalink }}" integrity="{{ $elyStyle.Data.Integrity }}" crossorigin="anonymous">
+
+
 {{- /* Google Tag Manager */ -}}
 {{- if site.Params.googleTagManager.id }}
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

@@ -1,0 +1,13 @@
+name = "elyfinn"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "Elyfinn brand layer theme for Hugo PaperMod (color palette, typography, partial overrides)."
+homepage = "https://elyfinn.com"
+min_version = "0.121.0"
+
+[author]
+  name = "Elyfinn"
+  homepage = "https://elyfinn.com"
+
+# This theme is intended to be used together with PaperMod:
+# theme = ["elyfinn", "PaperMod"]

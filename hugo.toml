@@ -1,6 +1,6 @@
 baseurl = "https://www.frxiaobei.com"
 title = "凡人小北 · 转角处"
-theme = "PaperMod"
+theme = ["elyfinn", "PaperMod"]
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 
