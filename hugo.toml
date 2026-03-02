@@ -126,6 +126,12 @@ url = "/about/"
 weight = 20
 
 [[menu.main]]
+identifier = "dao"
+name = "道"
+url = "https://dao.frxiaobei.com"
+weight = 25
+
+[[menu.main]]
 identifier = "search"
 name = "搜索"
 url = "/search/"
