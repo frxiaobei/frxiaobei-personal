@@ -25,6 +25,8 @@ cover:
 
 ![道](meditation-taoist.png)
 
+👉 [进入「道」](https://dao.frxiaobei.com)
+
 ---
 
 ### 🧠 我在做什么
