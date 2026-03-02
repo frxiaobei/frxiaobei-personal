@@ -64,16 +64,42 @@ main {
 }
 
 .hero__title {
-  font-family: "LXGW WenKai Screen", "Lora", "STKaiti", "KaiTi", serif;
-  font-size: clamp(3.5rem, 10vw, 9rem);
-  letter-spacing: 0.2em;
-  text-indent: 0.2em;
-  color: var(--text);
+  font-family: "LXGW WenKai Screen", "STKaiti", "KaiTi", serif;
+  font-size: clamp(4rem, 12vw, 10rem);
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: #f8f4e8;
+  text-shadow: 
+    0 0 40px rgba(255, 248, 230, 0.4),
+    0 0 80px rgba(255, 248, 230, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.3);
+  animation: daoBreath 4s ease-in-out infinite;
+}
+
+@keyframes daoBreath {
+  0%, 100% { 
+    opacity: 0.88;
+    text-shadow: 
+      0 0 40px rgba(255, 248, 230, 0.3),
+      0 0 80px rgba(255, 248, 230, 0.15),
+      0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  50% { 
+    opacity: 1;
+    text-shadow: 
+      0 0 50px rgba(255, 248, 230, 0.5),
+      0 0 100px rgba(255, 248, 230, 0.25),
+      0 2px 4px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .hero__subtitle {
-  font-size: clamp(1rem, 3.2vw, 1.6rem);
-  color: var(--muted);
+  font-size: clamp(1rem, 3.2vw, 1.5rem);
+  color: rgba(200, 195, 180, 0.85);
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  font-weight: 300;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 .hero__scroll {
