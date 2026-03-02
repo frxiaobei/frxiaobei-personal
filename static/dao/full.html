@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>道德经 · 全文 - 凡人小北</title>
+    <meta name="description" content="道德经 81 章原文全文阅读" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a class="topbar__back" href="index.html">← 返回「道」</a>
+        <div class="topbar__title">道德经 · 全文</div>
+        <a class="topbar__home" href="https://frxiaobei.com">frxiaobei.com</a>
+      </div>
+    </header>
+
+    <main class="reader" aria-label="道德经全文阅读">
+      <aside class="reader__side" aria-label="目录">
+        <details class="toc" open>
+          <summary class="toc__summary">目录（81 章）</summary>
+          <nav class="toc__list" id="tocList"></nav>
+        </details>
+      </aside>
+
+      <article class="reader__content" aria-label="正文" id="content"></article>
+    </main>
+
+    <footer class="footer footer--reader">
+      <a class="footer__link" href="index.html">← 返回「道」首页</a>
+      <div class="footer__copy">© 凡人小北</div>
+    </footer>
+
+    <script>
+      (function () {
+        const tocEl = document.getElementById('tocList');
+        const contentEl = document.getElementById('content');
+
+        function escapeHTML(s) {
+          return s
+            .replaceAll('&', '&amp;')
+            .replaceAll('<', '&lt;')
+            .replaceAll('>', '&gt;')
+            .replaceAll('"', '&quot;')
+            .replaceAll("'", '&#39;');
+        }
+
+        fetch('daodejing.json')
+          .then(r => r.json())
+          .then(data => {
+            data
+              .sort((a, b) => a.chapter - b.chapter)
+              .forEach(item => {
+                const id = 'chapter-' + item.chapter;
+
+                // 目录
+                const a = document.createElement('a');
+                a.className = 'toc__item';
+                a.href = '#' + id;
+                a.textContent = '第' + item.chapter + '章';
+                tocEl.appendChild(a);
+
+                // 正文
+                const section = document.createElement('section');
+                section.className = 'chapter';
+                section.id = id;
+
+                const h2 = document.createElement('h2');
+                h2.className = 'chapter__title';
+                h2.textContent = '第' + item.chapter + '章';
+
+                const pQuote = document.createElement('p');
+                pQuote.className = 'chapter__quote';
+                pQuote.textContent = '「' + (item.quote || '').trim() + '」';
+
+                const div = document.createElement('div');
+                div.className = 'chapter__full';
+                // 简单按句号/分号换行（移动端更好读）
+                const formatted = (item.full || '')
+                  .replaceAll('。', '。\n')
+                  .replaceAll('；', '；\n')
+                  .trim();
+                div.innerHTML = '<p>' + escapeHTML(formatted).replaceAll('\n', '<br>') + '</p>';
+
+                section.appendChild(h2);
+                section.appendChild(pQuote);
+                section.appendChild(div);
+                contentEl.appendChild(section);
+              });
+          })
+          .catch(() => {
+            contentEl.innerHTML = '<p style="color: var(--muted)">加载失败：无法读取 daodejing.json</p>';
+          });
+
+        // 点击目录项后（移动端）自动收起
+        document.addEventListener('click', (e) => {
+          const a = e.target.closest && e.target.closest('a.toc__item');
+          if (!a) return;
+          const details = document.querySelector('details.toc');
+          if (!details) return;
+          if (window.matchMedia('(max-width: 900px)').matches) {
+            details.open = false;
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
