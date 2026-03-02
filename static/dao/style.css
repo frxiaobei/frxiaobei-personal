@@ -57,7 +57,7 @@ main {
 }
 
 .hero__title {
-  font-family: "FZQingKeBenYueSong", "STKaiti", "KaiTi", serif;
+  font-family: "LXGW WenKai Screen", "Lora", "STKaiti", "KaiTi", serif;
   font-size: clamp(3.5rem, 10vw, 9rem);
   letter-spacing: 0.2em;
   text-indent: 0.2em;
