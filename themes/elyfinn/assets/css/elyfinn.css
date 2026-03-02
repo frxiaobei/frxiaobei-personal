@@ -54,7 +54,7 @@
 /* Force white background on body and main */
 body {
   /* Lora（英文衬线）+ 霞鹜文楷（中文楷书）*/
-  font-family: "Lora", "LXGW WenKai Screen", -apple-system, BlinkMacSystemFont, 
+  font-family: "LXGW WenKai Screen", "Lora", -apple-system, BlinkMacSystemFont, 
                "PingFang SC", "Microsoft YaHei", serif;
   font-size: 17px;
   line-height: 1.8;

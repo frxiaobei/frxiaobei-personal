@@ -11,24 +11,7 @@
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css" as="style">
 <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-{{- /* 字体加载前隐藏文字，加载后淡入 */ -}}
-<style>
-  html { opacity: 0; }
-  html.fonts-loaded { opacity: 1; transition: opacity 0.2s ease; }
-</style>
-<script>
-  if (document.fonts) {
-    document.fonts.ready.then(function() {
-      document.documentElement.classList.add('fonts-loaded');
-    });
-  } else {
-    document.documentElement.classList.add('fonts-loaded');
-  }
-  // Fallback: show content after 1s even if fonts not loaded
-  setTimeout(function() {
-    document.documentElement.classList.add('fonts-loaded');
-  }, 1000);
-</script>
+
 
 {{- /* Elyfinn brand CSS */ -}}
 {{- $elyStyle := resources.Get "css/elyfinn.css" | minify | fingerprint -}}
