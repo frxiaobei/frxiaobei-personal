@@ -189,6 +189,77 @@
         border-color: var(--accent);
       }
       
+      /* 浮动章节选择器 */
+      .chapter-nav {
+        position: fixed;
+        bottom: 32px;
+        right: 96px;
+        z-index: 200;
+      }
+      
+      .chapter-nav__btn {
+        width: 48px;
+        height: 48px;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 50%;
+        color: var(--text-muted);
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      
+      .chapter-nav__btn:hover {
+        background: var(--accent);
+        color: #fff;
+        border-color: var(--accent);
+      }
+      
+      .chapter-nav__panel {
+        position: absolute;
+        bottom: 60px;
+        right: 0;
+        width: 280px;
+        max-height: 400px;
+        overflow-y: auto;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 16px;
+        display: none;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      }
+      
+      .chapter-nav__panel.open {
+        display: block;
+      }
+      
+      .chapter-nav__grid {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        gap: 6px;
+      }
+      
+      .chapter-nav__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        aspect-ratio: 1;
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        text-decoration: none;
+        border-radius: 4px;
+        background: var(--bg-soft);
+        transition: all 0.2s;
+      }
+      
+      .chapter-nav__item:hover,
+      .chapter-nav__item.active {
+        background: var(--accent);
+        color: #fff;
+      }
+      
       @media (max-width: 600px) {
         .toc__grid {
           grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
@@ -203,6 +274,21 @@
           right: 20px;
           width: 40px;
           height: 40px;
+        }
+        
+        .chapter-nav {
+          right: 76px;
+          bottom: 20px;
+        }
+        
+        .chapter-nav__btn {
+          width: 40px;
+          height: 40px;
+        }
+        
+        .chapter-nav__panel {
+          width: 260px;
+          right: -36px;
         }
       }
     </style>
@@ -231,24 +317,44 @@
 
     <a class="back-top" id="backTop" href="#">↑</a>
 
+    <!-- 浮动章节选择器 -->
+    <div class="chapter-nav" id="chapterNav">
+      <button class="chapter-nav__btn" id="chapterBtn">章</button>
+      <div class="chapter-nav__panel" id="chapterPanel"></div>
+    </div>
+
     <script>
       const tocGrid = document.getElementById('tocGrid');
       const content = document.getElementById('content');
       const backTop = document.getElementById('backTop');
+      const chapterBtn = document.getElementById('chapterBtn');
+      const chapterPanel = document.getElementById('chapterPanel');
 
       // 加载数据
       fetch('../daodejing.json')
         .then(r => r.json())
         .then(data => {
+          // 创建浮动选择器的网格容器
+          const floatGrid = document.createElement('div');
+          floatGrid.className = 'chapter-nav__grid';
+          
           data.sort((a, b) => a.chapter - b.chapter).forEach(item => {
             const id = 'ch' + item.chapter;
             
-            // 目录
+            // 顶部目录
             const a = document.createElement('a');
             a.className = 'toc__item';
             a.href = '#' + id;
             a.textContent = item.chapter;
             tocGrid.appendChild(a);
+            
+            // 浮动选择器目录
+            const floatA = document.createElement('a');
+            floatA.className = 'chapter-nav__item';
+            floatA.href = '#' + id;
+            floatA.textContent = item.chapter;
+            floatA.onclick = () => { chapterPanel.classList.remove('open'); };
+            floatGrid.appendChild(floatA);
             
             // 正文
             const section = document.createElement('section');
@@ -269,11 +375,26 @@
             
             content.appendChild(section);
           });
+          
+          chapterPanel.appendChild(floatGrid);
         });
 
       // 回到顶部按钮
       window.addEventListener('scroll', () => {
         backTop.classList.toggle('visible', window.scrollY > 400);
+      });
+      
+      // 浮动章节选择器
+      chapterBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        chapterPanel.classList.toggle('open');
+      });
+      
+      // 点击外部关闭
+      document.addEventListener('click', (e) => {
+        if (!chapterPanel.contains(e.target) && e.target !== chapterBtn) {
+          chapterPanel.classList.remove('open');
+        }
       });
     </script>
   </body>
