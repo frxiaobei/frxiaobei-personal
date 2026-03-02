@@ -40,6 +40,23 @@
         font-size: 17px;
       }
       
+      /* 老子水印背景 */
+      body::before {
+        content: '';
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 400px;
+        height: 400px;
+        background-image: url('laozi-watermark.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        opacity: 0.04;
+        pointer-events: none;
+        z-index: 0;
+      }
+      
       /* 顶部导航 */
       .header {
         position: sticky;
