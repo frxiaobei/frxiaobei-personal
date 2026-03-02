@@ -65,31 +65,33 @@ main {
 
 .hero__title {
   font-family: "LXGW WenKai Screen", "STKaiti", "KaiTi", serif;
-  font-size: clamp(4rem, 12vw, 10rem);
+  font-size: clamp(5rem, 15vw, 12rem);
   font-weight: 400;
-  letter-spacing: 0.15em;
-  color: #f8f4e8;
+  letter-spacing: 0.2em;
+  color: #fff8e8;
   text-shadow: 
-    0 0 40px rgba(255, 248, 230, 0.4),
-    0 0 80px rgba(255, 248, 230, 0.2),
-    0 2px 4px rgba(0, 0, 0, 0.3);
-  animation: daoBreath 4s ease-in-out infinite;
+    0 0 30px rgba(255, 220, 150, 0.6),
+    0 0 60px rgba(255, 200, 100, 0.4),
+    0 0 120px rgba(255, 180, 80, 0.2),
+    0 4px 8px rgba(0, 0, 0, 0.5);
+  animation: daoBreath 5s ease-in-out infinite;
 }
 
 @keyframes daoBreath {
   0%, 100% { 
-    opacity: 0.88;
+    transform: scale(1);
     text-shadow: 
-      0 0 40px rgba(255, 248, 230, 0.3),
-      0 0 80px rgba(255, 248, 230, 0.15),
-      0 2px 4px rgba(0, 0, 0, 0.3);
+      0 0 30px rgba(255, 220, 150, 0.4),
+      0 0 60px rgba(255, 200, 100, 0.2),
+      0 4px 8px rgba(0, 0, 0, 0.5);
   }
   50% { 
-    opacity: 1;
+    transform: scale(1.02);
     text-shadow: 
-      0 0 50px rgba(255, 248, 230, 0.5),
-      0 0 100px rgba(255, 248, 230, 0.25),
-      0 2px 4px rgba(0, 0, 0, 0.3);
+      0 0 50px rgba(255, 220, 150, 0.8),
+      0 0 100px rgba(255, 200, 100, 0.5),
+      0 0 150px rgba(255, 180, 80, 0.3),
+      0 4px 8px rgba(0, 0, 0, 0.5);
   }
 }
 
