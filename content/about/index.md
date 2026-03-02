@@ -56,6 +56,7 @@ cover:
 ### 📬 联系我
 
 - **X（Twitter）：**[@frxiaobei](https://x.com/frxiaobei)
+- **公众号：** 凡人小北
 - **小红书：** 凡人小北
 - **Email / 合作 / 项目交流：** 请通过社交平台私信联系
 - **RSS：** [订阅](/index.xml)
