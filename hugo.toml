@@ -137,6 +137,18 @@ name = "搜索"
 url = "/search/"
 weight = 30
 
+[[menu.main]]
+identifier = "tags"
+name = "标签"
+url = "/tags/"
+weight = 40
+
+[[menu.main]]
+identifier = "subscribe"
+name = "订阅"
+url = "/subscribe/"
+weight = 50
+
 # Search
 [outputs]
 home = ["HTML", "RSS", "JSON"]
@@ -178,10 +190,25 @@ defaultContentLanguageInSubdir = false
     url = "/about/"
     weight = 20
     [[languages.zh-cn.menu.main]]
+    identifier = "dao"
+    name = "道"
+    url = "https://dao.frxiaobei.com"
+    weight = 25
+    [[languages.zh-cn.menu.main]]
     identifier = "search"
     name = "搜索"
     url = "/search/"
     weight = 30
+    [[languages.zh-cn.menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 40
+    [[languages.zh-cn.menu.main]]
+    identifier = "subscribe"
+    name = "订阅"
+    url = "/subscribe/"
+    weight = 50
     [[languages.zh-cn.menu.main]]
     identifier = "tags"
     name = "标签"
