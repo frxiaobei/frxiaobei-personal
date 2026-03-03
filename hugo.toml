@@ -140,7 +140,7 @@ weight = 40
 [[menu.main]]
 identifier = "subscribe"
 name = "订阅"
-url = "/subscribe/"
+url = "/newsletter/"
 weight = 50
 
 # Search
@@ -196,7 +196,7 @@ defaultContentLanguageInSubdir = false
     [[languages.zh-cn.menu.main]]
     identifier = "subscribe"
     name = "订阅"
-    url = "/subscribe/"
+    url = "/newsletter/"
     weight = 50
     [[languages.zh-cn.menu.main]]
     identifier = "tags"
