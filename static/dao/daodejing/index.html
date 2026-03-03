@@ -7,6 +7,7 @@
     <meta name="description" content="道德经八十一章原文全文阅读" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" />
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PEVTF8NDTP"></script>
     <script>
@@ -16,31 +17,7 @@
       gtag('config', 'G-PEVTF8NDTP');
     </script>
     <style>
-      :root {
-        --bg: #0d0d0d;
-        --bg-soft: #161616;
-        --bg-card: #1a1a1a;
-        --text: #e8e4d9;
-        --text-muted: #888;
-        --accent: #dd6030;
-        --border: rgba(255,255,255,0.08);
-      }
-      
-      * { box-sizing: border-box; margin: 0; padding: 0; }
-      
-      html {
-        scroll-behavior: smooth;
-      }
-      
-      body {
-        font-family: "LXGW WenKai Screen", serif;
-        background: var(--bg);
-        color: var(--text);
-        line-height: 1.9;
-        font-size: 17px;
-      }
-      
-      /* 老子水印背景 */
+      /* Page-specific overrides or additions */
       body::before {
         content: '';
         position: fixed;
@@ -52,375 +29,113 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom right;
-        opacity: 0.04;
+        opacity: 0.03;
         pointer-events: none;
-        z-index: 0;
-      }
-      
-      /* 顶部导航 */
-      .header {
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        background: rgba(13,13,13,0.9);
-        backdrop-filter: blur(12px);
-        border-bottom: 1px solid var(--border);
-        padding: 16px 24px;
-      }
-      
-      .header__inner {
-        max-width: 900px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      
-      .header__back {
-        color: var(--text-muted);
-        text-decoration: none;
-        font-size: 0.9rem;
-        transition: color 0.2s;
-      }
-      
-      .header__back:hover { color: var(--accent); }
-      
-      .header__title {
-        font-size: 1.1rem;
-        letter-spacing: 0.1em;
-        color: var(--text);
-      }
-      
-      /* 目录 */
-      .toc {
-        max-width: 900px;
-        margin: 40px auto;
-        padding: 0 24px;
-      }
-      
-      .toc__title {
-        font-size: 0.85rem;
-        color: var(--text-muted);
-        margin-bottom: 16px;
-        letter-spacing: 0.1em;
-      }
-      
-      .toc__grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-        gap: 8px;
-      }
-      
-      .toc__item {
-        display: block;
-        padding: 8px 4px;
-        text-align: center;
-        font-size: 0.85rem;
-        color: var(--text-muted);
-        text-decoration: none;
-        border-radius: 6px;
-        background: var(--bg-card);
-        transition: all 0.2s;
-      }
-      
-      .toc__item:hover {
-        background: var(--accent);
-        color: #fff;
-      }
-      
-      /* 正文 */
-      .content {
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 40px 24px 80px;
-      }
-      
-      .chapter {
-        margin-bottom: 64px;
-        padding-bottom: 48px;
-        border-bottom: 1px solid var(--border);
-        scroll-margin-top: 80px;
-      }
-      
-      .chapter:last-child {
-        border-bottom: none;
-      }
-      
-      .chapter__title {
-        font-size: 1.5rem;
-        color: var(--accent);
-        margin-bottom: 24px;
-        font-weight: 500;
-        letter-spacing: 0.15em;
-      }
-      
-      .chapter__text {
-        color: var(--text);
-        line-height: 2.2;
-        letter-spacing: 0.05em;
-      }
-      
-      .chapter__text p {
-        margin-bottom: 1em;
-        text-indent: 2em;
-      }
-      
-      /* 页脚 */
-      .footer {
-        text-align: center;
-        padding: 40px 24px;
-        color: var(--text-muted);
-        font-size: 0.85rem;
-        border-top: 1px solid var(--border);
-      }
-      
-      .footer a {
-        color: var(--text);
-        text-decoration: none;
-      }
-      
-      .footer a:hover {
-        color: var(--accent);
-      }
-      
-      /* 回到顶部 */
-      .back-top {
-        position: fixed;
-        bottom: 32px;
-        right: 32px;
-        width: 48px;
-        height: 48px;
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--text-muted);
-        text-decoration: none;
-        font-size: 1.2rem;
-        opacity: 0;
-        transition: all 0.3s;
-        pointer-events: none;
-      }
-      
-      .back-top.visible {
-        opacity: 1;
-        pointer-events: auto;
-      }
-      
-      .back-top:hover {
-        background: var(--accent);
-        color: #fff;
-        border-color: var(--accent);
-      }
-      
-      /* 浮动章节选择器 */
-      .chapter-nav {
-        position: fixed;
-        bottom: 32px;
-        right: 96px;
-        z-index: 200;
-      }
-      
-      .chapter-nav__btn {
-        width: 48px;
-        height: 48px;
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        border-radius: 50%;
-        color: var(--text-muted);
-        font-size: 1rem;
-        cursor: pointer;
-        transition: all 0.3s;
-      }
-      
-      .chapter-nav__btn:hover {
-        background: var(--accent);
-        color: #fff;
-        border-color: var(--accent);
-      }
-      
-      .chapter-nav__panel {
-        position: absolute;
-        bottom: 60px;
-        right: 0;
-        width: 280px;
-        max-height: 400px;
-        overflow-y: auto;
-        background: var(--bg-card);
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 16px;
-        display: none;
-        box-shadow: 0 8px 32px rgba(0,0,0,0.4);
-      }
-      
-      .chapter-nav__panel.open {
-        display: block;
-      }
-      
-      .chapter-nav__grid {
-        display: grid;
-        grid-template-columns: repeat(9, 1fr);
-        gap: 6px;
-      }
-      
-      .chapter-nav__item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        aspect-ratio: 1;
-        font-size: 0.75rem;
-        color: var(--text-muted);
-        text-decoration: none;
-        border-radius: 4px;
-        background: var(--bg-soft);
-        transition: all 0.2s;
-      }
-      
-      .chapter-nav__item:hover,
-      .chapter-nav__item.active {
-        background: var(--accent);
-        color: #fff;
-      }
-      
-      @media (max-width: 600px) {
-        .toc__grid {
-          grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-        }
-        
-        .chapter__title {
-          font-size: 1.3rem;
-        }
-        
-        .back-top {
-          bottom: 20px;
-          right: 20px;
-          width: 40px;
-          height: 40px;
-        }
-        
-        .chapter-nav {
-          right: 76px;
-          bottom: 20px;
-        }
-        
-        .chapter-nav__btn {
-          width: 40px;
-          height: 40px;
-        }
-        
-        .chapter-nav__panel {
-          width: 260px;
-          right: -36px;
-        }
+        z-index: -1;
       }
     </style>
   </head>
   <body>
-    <header class="header">
-      <div class="header__inner">
-        <a class="header__back" href="../">← 返回「道」</a>
-        <div class="header__title">道德经</div>
-        <a class="header__back" href="https://frxiaobei.com">转角处</a>
+    <header class="topbar">
+      <div class="topbar__inner">
+        <a class="topbar__back" href="../">← 返回「道」</a>
+        <div class="topbar__title">道德经</div>
+        <a class="topbar__home" href="https://frxiaobei.com">转角处</a>
       </div>
     </header>
 
-    <nav class="toc">
-      <div class="toc__title">目录 · 八十一章</div>
-      <div class="toc__grid" id="tocGrid"></div>
-    </nav>
+    <main class="reader">
+      <aside class="reader__side">
+        <nav class="toc">
+          <div class="toc__title">目录 · 八十一章</div>
+          <div class="toc__grid" id="tocGrid"></div>
+        </nav>
+      </aside>
 
-    <main class="content" id="content"></main>
+      <article class="reader__content" id="content">
+        <!-- Chapters will be loaded here -->
+      </article>
+    </main>
 
     <footer class="footer">
-      <a href="../">← 返回「道」</a>
-      <span style="margin: 0 16px;">·</span>
-      <span>© 转角处</span>
+      <div class="footer__inner">
+        <a class="footer__link" href="../">← 返回「道」</a>
+        <div class="footer__copy">© 凡人小北 · 道德经全文阅读</div>
+      </div>
     </footer>
 
     <a class="back-top" id="backTop" href="#">↑</a>
-
-    <!-- 浮动章节选择器 -->
-    <div class="chapter-nav" id="chapterNav">
-      <button class="chapter-nav__btn" id="chapterBtn">章</button>
-      <div class="chapter-nav__panel" id="chapterPanel"></div>
-    </div>
 
     <script>
       const tocGrid = document.getElementById('tocGrid');
       const content = document.getElementById('content');
       const backTop = document.getElementById('backTop');
-      const chapterBtn = document.getElementById('chapterBtn');
-      const chapterPanel = document.getElementById('chapterPanel');
 
       // 加载数据
       fetch('../daodejing.json')
         .then(r => r.json())
         .then(data => {
-          // 创建浮动选择器的网格容器
-          const floatGrid = document.createElement('div');
-          floatGrid.className = 'chapter-nav__grid';
-          
           data.sort((a, b) => a.chapter - b.chapter).forEach(item => {
             const id = 'ch' + item.chapter;
             
-            // 顶部目录
+            // TOC Item
             const a = document.createElement('a');
             a.className = 'toc__item';
             a.href = '#' + id;
+            a.id = 'toc-' + id;
             a.textContent = item.chapter;
             tocGrid.appendChild(a);
             
-            // 浮动选择器目录
-            const floatA = document.createElement('a');
-            floatA.className = 'chapter-nav__item';
-            floatA.href = '#' + id;
-            floatA.textContent = item.chapter;
-            floatA.onclick = () => { chapterPanel.classList.remove('open'); };
-            floatGrid.appendChild(floatA);
-            
-            // 正文
+            // Chapter Content
             const section = document.createElement('section');
             section.className = 'chapter';
             section.id = id;
             
-            // 按句号分段
+            // Split by punctuation for better reading flow
             const paragraphs = item.full
               .split(/(?<=[。！？])\s*/)
               .filter(p => p.trim())
-              .map(p => '<p>' + p + '</p>')
+              .map(p => `<p>${p}</p>`)
               .join('');
             
             section.innerHTML = `
-              <h2 class="chapter__title">第${item.chapter}章</h2>
+              <h2 class="chapter__title">第 ${item.chapter} 章</h2>
               <div class="chapter__text">${paragraphs}</div>
             `;
             
             content.appendChild(section);
           });
-          
-          chapterPanel.appendChild(floatGrid);
+
+          // Intersection Observer for TOC highlighting
+          const observerOptions = {
+            root: null,
+            rootMargin: '-10% 0px -80% 0px',
+            threshold: 0
+          };
+
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                // Remove active class from all
+                document.querySelectorAll('.toc__item').forEach(el => el.classList.remove('active'));
+                // Add to current
+                const activeId = 'toc-' + entry.target.id;
+                const activeEl = document.getElementById(activeId);
+                if (activeEl) {
+                  activeEl.classList.add('active');
+                  // Optional: scroll TOC into view if it's too long
+                  // activeEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+              }
+            });
+          }, observerOptions);
+
+          document.querySelectorAll('.chapter').forEach(chapter => observer.observe(chapter));
         });
 
-      // 回到顶部按钮
+      // Back to top button visibility
       window.addEventListener('scroll', () => {
-        backTop.classList.toggle('visible', window.scrollY > 400);
-      });
-      
-      // 浮动章节选择器
-      chapterBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        chapterPanel.classList.toggle('open');
-      });
-      
-      // 点击外部关闭
-      document.addEventListener('click', (e) => {
-        if (!chapterPanel.contains(e.target) && e.target !== chapterBtn) {
-          chapterPanel.classList.remove('open');
-        }
+        backTop.classList.toggle('visible', window.scrollY > 600);
       });
     </script>
   </body>

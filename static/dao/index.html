@@ -26,21 +26,26 @@
         <div class="hero__content">
           <div class="hero__title" aria-hidden="true">道</div>
           <div class="hero__subtitle">知者不言，言者不知</div>
+          
           <div class="daily-quote" id="dailyQuote">
-            <div class="daily-quote__text" id="quoteText"></div>
+            <div class="daily-quote__text" id="quoteText">加载中...</div>
             <div class="daily-quote__source" id="quoteSource"></div>
             <div class="daily-quote__full" id="quoteFull"></div>
-            <div class="daily-quote__hint">轻触展开</div>
+            <div class="daily-quote__hint">轻触感悟</div>
           </div>
-          <a class="daily-quote__link" href="daodejing/">阅读道德经全文 →</a>
+          
+          <a class="daily-quote__link" href="daodejing/">
+            阅读道德经全文
+            <svg style="margin-left: 8px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
         </div>
         <div class="hero__scroll">↓</div>
       </section>
 
       <section class="section" aria-label="关于道">
         <div class="section__inner">
-          <h2>关于道</h2>
-          <div class="prose">
+          <h2 style="animation: slideUp 0.8s var(--ease) both;">关于道</h2>
+          <div class="prose" style="animation: slideUp 1s var(--ease) both;">
             <p>老子说“知者不博，博者不知”</p>
             <p>庄子说“吾生也有涯，而知也无涯”</p>
             <p>我信这个。</p>
@@ -52,8 +57,8 @@
 
       <section class="section" aria-label="修行">
         <div class="section__inner">
-          <h2>修行</h2>
-          <div class="prose">
+          <h2 style="animation: slideUp 0.8s var(--ease) both;">修行</h2>
+          <div class="prose" style="animation: slideUp 1s var(--ease) both;">
             <p>日常会打坐，偶尔读经。</p>
             <p>不是玄学，是让自己静下来的方式。</p>
             <p>在这个加速的时代，</p>
@@ -65,8 +70,9 @@
 
     <footer class="footer">
       <a class="footer__link" href="https://frxiaobei.com">← frxiaobei.com</a>
-      <div class="footer__copy">© 凡人小北</div>
+      <div class="footer__copy">© 凡人小北 · 2025</div>
     </footer>
+
     <script>
       // 每日一句道德经
       (function() {
@@ -75,7 +81,6 @@
         const sourceEl = document.getElementById('quoteSource');
         const fullEl = document.getElementById('quoteFull');
         
-        // 根据日期选择章节
         function getDayOfYear() {
           const now = new Date();
           const start = new Date(now.getFullYear(), 0, 0);
@@ -84,7 +89,6 @@
           return Math.floor(diff / oneDay);
         }
         
-        // 加载数据
         fetch('daodejing.json')
           .then(r => r.json())
           .then(data => {
@@ -92,16 +96,16 @@
             const item = data[index];
             
             textEl.textContent = '「' + item.quote + '」';
-            sourceEl.textContent = '—— 第' + item.chapter + '章';
+            sourceEl.textContent = '—— 第 ' + item.chapter + ' 章';
             fullEl.textContent = item.full;
             
-            // 点击展开/收起
             quoteEl.addEventListener('click', function() {
               quoteEl.classList.toggle('expanded');
             });
           })
           .catch(e => {
-            console.log('Failed to load daily quote');
+            textEl.textContent = '道可道，非常道。';
+            sourceEl.textContent = '—— 道德经';
           });
       })();
     </script>
