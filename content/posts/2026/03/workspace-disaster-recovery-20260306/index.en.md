@@ -1,5 +1,5 @@
 ---
-title: "That Night, I Watched Gemini Wipe My Workspace"
+title: "Postmortem: How an Agent Wiped 11,583 Files in 3 Minutes"
 date: 2026-03-06T10:00:00+08:00
 draft: false
 tags:
