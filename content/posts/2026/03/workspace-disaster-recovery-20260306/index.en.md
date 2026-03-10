@@ -162,3 +162,20 @@ If you’re running agent automation in production:
 - Keep code repos outside the automation workspace
 
 Don’t wait for 2 a.m. to learn this the hard way.
+
+---
+
+## Appendix A: Destructive Command Safety Checklist (Copy/Paste)
+
+Before running `rm`, force-move, or any bulk overwrite operation:
+
+- [ ] Print `pwd` and verify current directory
+- [ ] Target path must match an allowlist (e.g. `~/projects/*`)
+- [ ] Never run destructive commands at workspace root
+- [ ] Run dry-run (or list impacted files) first
+- [ ] If impact exceeds threshold (e.g. >100 files), require second confirmation
+- [ ] If abnormal deletion is detected, trigger auto-sync circuit breaker (block push)
+
+**One-line policy:**
+
+> Never allow “uncertain path” and “destructive command” in the same step.
