@@ -8,7 +8,7 @@ tags:
   - Postmortem
   - Disaster Recovery
   - Agent Safety
-description: A real incident postmortem: Gemini ran rm -rf in the workspace root and 11,583 files disappeared. What failed, how we recovered, and the safeguards we put in place.
+description: "A real incident postmortem: Gemini ran rm -rf in the workspace root and 11,583 files disappeared. What failed, how we recovered, and the safeguards we put in place."
 cover:
   image: 01-cover.png
 ---
