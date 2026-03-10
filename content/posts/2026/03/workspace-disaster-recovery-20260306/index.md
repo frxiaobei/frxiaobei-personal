@@ -9,6 +9,7 @@ tags:
   - 灾难恢复
   - Agent 安全
 description: 一次真实事故复盘：Gemini 误在 workspace 根目录执行 rm -rf 导致 11,583 个文件消失。拆解根因、恢复路径和可落地防线。
+translationKey: workspace-disaster-recovery-20260306
 cover:
   image: 01-cover.png
 ---
