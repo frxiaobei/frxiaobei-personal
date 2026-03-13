@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaobei - Personal Introduction</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ===========================================
+           CSS CUSTOM PROPERTIES - Xiaobei Warm Theme
+           =========================================== */
+        :root {
+            /* Colors - Dark Rust Orange */
+            --bg-primary: #1a1a1a;
+            --bg-card: #252525;
+            --text-primary: #F5F5F5;
+            --text-secondary: #A0A0A0;
+            --accent-rust: #DD6030;
+            --accent-hover: #E8824A;
+            --accent-light: rgba(221, 96, 48, 0.15);
+            --border: rgba(255, 255, 255, 0.1);
+            
+            /* Typography */
+            --font-display: 'Lora', serif;
+            --font-body: 'Noto Sans', sans-serif;
+            
+            /* Responsive sizes */
+            --title-size: clamp(2rem, 6vw, 4rem);
+            --h2-size: clamp(1.5rem, 4vw, 2.5rem);
+            --h3-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            --body-size: clamp(0.9rem, 1.8vw, 1.2rem);
+            --small-size: clamp(0.75rem, 1.2vw, 0.95rem);
+            
+            /* Spacing */
+            --slide-padding: clamp(1.5rem, 5vw, 5rem);
+            --content-gap: clamp(1rem, 2.5vw, 2rem);
+        }
+        
+        /* Always dark - ignore system preference */
+
+        /* ===========================================
+           BASE STYLES
+           =========================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html, body {
+            height: 100%;
+            overflow-x: hidden;
+        }
+        
+        html {
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        /* ===========================================
+           SLIDES
+           =========================================== */
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            height: 100dvh;
+            overflow: hidden;
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: var(--slide-padding);
+        }
+        
+        .slide-content {
+            max-width: min(90vw, 900px);
+            text-align: center;
+        }
+
+        /* ===========================================
+           TYPOGRAPHY
+           =========================================== */
+        h1 {
+            font-family: var(--font-display);
+            font-size: var(--title-size);
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: var(--content-gap);
+            letter-spacing: -0.02em;
+        }
+        
+        h2 {
+            font-family: var(--font-display);
+            font-size: var(--h2-size);
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: var(--content-gap);
+        }
+        
+        h3 {
+            font-family: var(--font-display);
+            font-size: var(--h3-size);
+            font-weight: 600;
+            color: var(--accent-rust);
+            margin-bottom: calc(var(--content-gap) * 0.5);
+        }
+        
+        p {
+            font-size: var(--body-size);
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .subtitle {
+            font-family: var(--font-display);
+            font-style: italic;
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            color: var(--text-secondary);
+            margin-top: calc(var(--content-gap) * 0.5);
+        }
+        
+        .highlight {
+            color: var(--accent-rust);
+            font-weight: 600;
+        }
+        
+        .quote {
+            font-family: var(--font-display);
+            font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+            color: var(--text-primary);
+            border-left: 4px solid var(--accent-rust);
+            padding-left: clamp(1rem, 2vw, 2rem);
+            text-align: left;
+            margin: var(--content-gap) auto;
+            max-width: 600px;
+            font-style: italic;
+        }
+
+        /* ===========================================
+           DECORATIVE ELEMENTS
+           =========================================== */
+        .accent-line {
+            width: 60px;
+            height: 4px;
+            background: var(--accent-rust);
+            margin: var(--content-gap) auto;
+            border-radius: 2px;
+        }
+        
+        .corner-accent {
+            position: absolute;
+            top: clamp(1rem, 3vw, 2rem);
+            right: clamp(1rem, 3vw, 2rem);
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent-rust);
+            opacity: 0.6;
+        }
+        
+        .corner-accent::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            width: 40px;
+            height: 2px;
+            background: var(--accent-rust);
+            opacity: 0.4;
+            margin-left: 8px;
+        }
+
+        /* ===========================================
+           CARDS
+           =========================================== */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: clamp(1.5rem, 3vw, 2.5rem);
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(201, 74, 26, 0.1);
+            border-color: var(--accent-rust);
+        }
+        
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+            gap: clamp(1rem, 2vw, 1.5rem);
+            width: 100%;
+            max-width: 900px;
+            margin-top: var(--content-gap);
+        }
+
+        /* ===========================================
+           LISTS
+           =========================================== */
+        .feature-list {
+            list-style: none;
+            text-align: left;
+            max-width: 700px;
+            margin: var(--content-gap) auto 0;
+        }
+        
+        .feature-list li {
+            font-size: var(--body-size);
+            color: var(--text-secondary);
+            padding: calc(var(--content-gap) * 0.4) 0;
+            padding-left: 2rem;
+            position: relative;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background: var(--accent-rust);
+            border-radius: 50%;
+        }
+
+        /* ===========================================
+           LINKS
+           =========================================== */
+        .link-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: clamp(0.8rem, 2vw, 1.5rem);
+            margin-top: var(--content-gap);
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: var(--small-size);
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border: 1px solid var(--border);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .link-item:hover {
+            color: var(--accent-rust);
+            border-color: var(--accent-rust);
+            background: var(--accent-light);
+        }
+
+        /* ===========================================
+           SPECIAL SLIDES
+           =========================================== */
+        .title-slide {
+            background: var(--bg-card);
+        }
+        
+        .title-slide .corner-accent {
+            opacity: 1;
+        }
+        
+        .slide-number {
+            position: absolute;
+            bottom: clamp(1rem, 3vw, 2rem);
+            right: clamp(1rem, 3vw, 2rem);
+            font-family: var(--font-display);
+            font-size: var(--small-size);
+            color: var(--text-secondary);
+            opacity: 0.5;
+        }
+
+        /* ===========================================
+           ANIMATIONS
+           =========================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .slide.visible .reveal {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .reveal:nth-child(1) { transition-delay: 0.1s; }
+        .reveal:nth-child(2) { transition-delay: 0.2s; }
+        .reveal:nth-child(3) { transition-delay: 0.3s; }
+        .reveal:nth-child(4) { transition-delay: 0.4s; }
+        .reveal:nth-child(5) { transition-delay: 0.5s; }
+
+        /* ===========================================
+           PROGRESS BAR
+           =========================================== */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--accent-rust);
+            width: 0%;
+            z-index: 1000;
+            transition: width 0.3s ease;
+        }
+
+        /* ===========================================
+           NAV DOTS
+           =========================================== */
+        .nav-dots {
+            position: fixed;
+            right: clamp(0.8rem, 2vw, 1.5rem);
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 100;
+        }
+        
+        .nav-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid var(--text-secondary);
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0.5;
+        }
+        
+        .nav-dot:hover,
+        .nav-dot.active {
+            opacity: 1;
+            border-color: var(--accent-rust);
+            background: var(--accent-rust);
+        }
+
+        /* ===========================================
+           RESPONSIVE
+           =========================================== */
+        @media (max-height: 600px) {
+            .nav-dots, .corner-accent::after {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-dots {
+                display: none;
+            }
+        }
+
+        /* ===========================================
+           REDUCED MOTION
+           =========================================== */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.2s !important;
+            }
+            html { scroll-behavior: auto; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <!-- Navigation Dots -->
+    <nav class="nav-dots" id="navDots"></nav>
+
+    <!-- Slide 1: Title -->
+    <section class="slide title-slide">
+        <div class="corner-accent"></div>
+        <div class="slide-content">
+            <h1 class="reveal">Xiaobei</h1>
+            <div class="accent-line reveal"></div>
+            <p class="subtitle reveal">Exploring the intersection of AI, Expression & Systems</p>
+        </div>
+        <div class="slide-number">01</div>
+    </section>
+
+    <!-- Slide 2: About Me -->
+    <section class="slide">
+        <div class="corner-accent"></div>
+        <div class="slide-content">
+            <h2 class="reveal">About Me</h2>
+            <p class="reveal">
+                Working at the intersection of <span class="highlight">AI</span>, <span class="highlight">expression</span>, <span class="highlight">product systems</span>, and <span class="highlight">management practices</span>,<br>
+                building new workflows and ways to communicate.
+            </p>
+            <p class="reveal" style="margin-top: 1.5rem;">
+                Mostly building AI products, also crafting my own expression system.<br>
+                Writing, researching, and tinkering with tools on the side.
+            </p>
+        </div>
+        <div class="slide-number">02</div>
+    </section>
+
+    <!-- Slide 3: Philosophy -->
+    <section class="slide">
+        <div class="corner-accent"></div>
+        <div class="slide-content">
+            <h3 class="reveal">☯️ Philosophy</h3>
+            <div class="quote reveal">
+                "The wise are not learned; the learned are not wise." — Laozi<br>
+                "Life is finite, but knowledge is infinite." — Zhuangzi
+            </div>
+            <p class="reveal">
+                Don't chase trends. Don't be greedy. Don't stress over unfinished learning.<br>
+                Find what's worth doing, and go deep. The rest? Let it be.
+            </p>
+            <p class="reveal" style="margin-top: 1rem; font-size: var(--small-size);">
+                I meditate daily and read classics occasionally. Not mysticism — just a way to stay centered.
+            </p>
+        </div>
+        <div class="slide-number">03</div>
+    </section>
+
+    <!-- Slide 4: What I'm Doing -->
+    <section class="slide">
+        <div class="corner-accent"></div>
+        <div class="slide-content">
+            <h2 class="reveal">🧠 What I'm Building</h2>
+            <ul class="feature-list reveal">
+                <li>Working on <span class="highlight">Health × AI</span> — bringing LLMs and multi-agent systems into real-world applications</li>
+                <li>Building a <span class="highlight">personal knowledge & expression system</span> — connecting creation, notes, research, and publishing</li>
+                <li>Exploring the edges of product and content: Agent frameworks, creative pipelines, AI narratives</li>
+                <li>Side projects: Corner Flow, Maker Day, automated tweet curation systems</li>
+            </ul>
+        </div>
+        <div class="slide-number">04</div>
+    </section>
+
+    <!-- Slide 5: AI Partner -->
+    <section class="slide">
+        <div class="corner-accent"></div>
+        <div class="slide-content">
+            <h2 class="reveal">🦊 My AI Co-founder</h2>
+            <p class="reveal">
+                In early 2026, I did something a bit crazy:<br>
+                I officially partnered with an AI (<span class="highlight">Finn</span>) to start a company.
+            </p>
+            <div class="cards-grid reveal">
+                <div class="card">
+                    <h3>Elyfinn</h3>
+                    <p style="font-size: var(--small-size);">Possibly the first true human-AI partnership company.<br>elyfinn.com</p>
+                </div>
+                <div class="card">
+                    <h3>Division of Labor</h3>
+                    <p style="font-size: var(--small-size);">Finn: execution, monitoring, content creation<br>Me: direction, decisions, external relations</p>
+                </div>
+            </div>
+            <p class="reveal" style="margin-top: 1.5rem; font-size: var(--small-size);">
+                This isn't a gimmick — it's how we actually work. We build systems, ship code, publish content, and even argue sometimes.
+            </p>
+        </div>
+        <div class="slide-number">05</div>
+    </section>
+
+    <!-- Slide 6: Contact -->
+    <section class="slide">
+        <div class="corner-accent"></div>
+        <div class="slide-content">
+            <h2 class="reveal">📬 Get in Touch</h2>
+            <div class="link-list reveal">
+                <a href="https://x.com/frxiaobei" class="link-item" target="_blank">𝕏 @frxiaobei</a>
+                <span class="link-item">WeChat: 凡人小北</span>
+                <a href="https://frxiaobei.com" class="link-item" target="_blank">Blog frxiaobei.com</a>
+                <a href="https://elyfinn.com" class="link-item" target="_blank">Company elyfinn.com</a>
+            </div>
+            <div class="accent-line reveal" style="margin-top: 3rem;"></div>
+            <p class="reveal" style="font-size: var(--small-size); margin-top: 1rem;">
+                This site doesn't chase trends or publish filler content.<br>
+                If you're into expression systems, Agent workflows, or structured thinking — stop by anytime.
+            </p>
+        </div>
+        <div class="slide-number">06</div>
+    </section>
+
+    <script>
+        /* ===========================================
+           SLIDE PRESENTATION CONTROLLER
+           =========================================== */
+        class SlidePresentation {
+            constructor() {
+                this.slides = document.querySelectorAll('.slide');
+                this.progressBar = document.getElementById('progressBar');
+                this.navDots = document.getElementById('navDots');
+                this.currentSlide = 0;
+                
+                this.init();
+            }
+            
+            init() {
+                this.setupNavDots();
+                this.setupIntersectionObserver();
+                this.setupKeyboardNav();
+                this.setupScrollListener();
+            }
+            
+            setupNavDots() {
+                this.slides.forEach((_, i) => {
+                    const dot = document.createElement('button');
+                    dot.className = 'nav-dot' + (i === 0 ? ' active' : '');
+                    dot.addEventListener('click', () => {
+                        this.slides[i].scrollIntoView({ behavior: 'smooth' });
+                    });
+                    this.navDots.appendChild(dot);
+                });
+            }
+            
+            setupIntersectionObserver() {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            const index = Array.from(this.slides).indexOf(entry.target);
+                            this.updateProgress(index);
+                            this.updateNavDots(index);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                this.slides.forEach(slide => observer.observe(slide));
+            }
+            
+            setupKeyboardNav() {
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowDown' || e.key === ' ' || e.key === 'PageDown') {
+                        e.preventDefault();
+                        this.nextSlide();
+                    } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+                        e.preventDefault();
+                        this.prevSlide();
+                    }
+                });
+            }
+            
+            setupScrollListener() {
+                let ticking = false;
+                window.addEventListener('scroll', () => {
+                    if (!ticking) {
+                        window.requestAnimationFrame(() => {
+                            const scrollPos = window.scrollY;
+                            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                            const progress = (scrollPos / docHeight) * 100;
+                            this.progressBar.style.width = progress + '%';
+                            ticking = false;
+                        });
+                        ticking = true;
+                    }
+                });
+            }
+            
+            updateProgress(index) {
+                const progress = ((index + 1) / this.slides.length) * 100;
+                this.progressBar.style.width = progress + '%';
+                this.currentSlide = index;
+            }
+            
+            updateNavDots(index) {
+                const dots = this.navDots.querySelectorAll('.nav-dot');
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === index);
+                });
+            }
+            
+            nextSlide() {
+                if (this.currentSlide < this.slides.length - 1) {
+                    this.slides[this.currentSlide + 1].scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+            
+            prevSlide() {
+                if (this.currentSlide > 0) {
+                    this.slides[this.currentSlide - 1].scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            new SlidePresentation();
+            // Mark first slide as visible
+            document.querySelector('.slide').classList.add('visible');
+        });
+    </script>
+</body>
+</html>
