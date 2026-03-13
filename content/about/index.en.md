@@ -9,6 +9,8 @@ cover:
 
 Hi, I'm frxiaobei.
 
+> 📽️ Want a quick intro? Check out the [Slides version](/slides/intro-en.html) ([dark mode](/slides/intro-en-dark.html))
+
 I navigate between AI, expression, product systems, and management practices, trying to build a new workflow and expression method.
 Most of the time I work on AI products, while also building my own expression system, writing, researching, and tinkering with tools in my spare time.
 You may have seen me on X ([@frxiaobei](https://x.com/frxiaobei)) or other platforms.

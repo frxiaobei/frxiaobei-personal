@@ -9,6 +9,8 @@ cover:
 
 你好，我是凡人小北。
 
+> 📽️ 想快速了解我？看 [Slides 版本](/slides/intro.html)（[暗色](/slides/intro-dark.html)）
+
 我混在 AI、表达、产品系统、管理实践这些领域之间，试图构建一种新的工作流与表达方式。  
 大部分时间在做 AI 产品，也在构建自己的表达系统，业余写作、研究、折腾工具。  
 你可能在 X（[@frxiaobei](https://x.com/frxiaobei)）或小红书上见过我。
