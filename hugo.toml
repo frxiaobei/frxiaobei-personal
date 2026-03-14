@@ -157,6 +157,8 @@ defaultContentLanguageInSubdir = false
     [languages.zh-cn.params]
     author = "凡人小北"
     description = "每一个转角，都是遇见下一条路的开始。在转角处，写下关于AI、思考与拐点的故事。"
+    fontFamily = "LXGW WenKai Screen"
+    fontUrl = "https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css"
     [languages.zh-cn.params.profileMode]
     enabled = false
     title = "凡人小北"
@@ -216,6 +218,8 @@ defaultContentLanguageInSubdir = false
     [languages.en.params]
     author = "frxiaobei"
     description = "Every corner is the beginning of meeting the next road. Writing stories about AI, thoughts and turning points."
+    fontFamily = "Lora"
+    fontUrl = "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
     [languages.en.params.label]
     text = "frxiaobei · Elyfinn"
     icon = "/images/elyfinn-fox.png"
