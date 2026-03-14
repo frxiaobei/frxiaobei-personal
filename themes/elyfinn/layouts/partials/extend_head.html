@@ -4,23 +4,13 @@
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-{{- /* 字体：按语言加载 */ -}}
+{{- /* 字体：霞鹜文楷 + Lora（英文衬线体）*/ -}}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-{{- if eq .Lang "en" }}
-{{- /* 英文站用 Lora */ -}}
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-{{- $fontStyle := resources.Get "css/font-en.css" | minify | fingerprint -}}
-<link rel="stylesheet" href="{{ $fontStyle.RelPermalink }}" integrity="{{ $fontStyle.Data.Integrity }}" crossorigin="anonymous">
-{{- else }}
-{{- /* 中文站用落霞孤鹜 */ -}}
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css" as="style">
 <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css" rel="stylesheet">
-{{- $fontStyle := resources.Get "css/font-zh.css" | minify | fingerprint -}}
-<link rel="stylesheet" href="{{ $fontStyle.RelPermalink }}" integrity="{{ $fontStyle.Data.Integrity }}" crossorigin="anonymous">
-{{- end }}
-
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
 
 {{- /* Elyfinn brand CSS */ -}}
