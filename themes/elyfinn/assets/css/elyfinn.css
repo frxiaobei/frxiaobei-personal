@@ -54,8 +54,7 @@
 /* Force white background on body and main */
 body {
   /* Lora（英文衬线）+ 霞鹜文楷（中文楷书）*/
-  font-family: "Lora", "LXGW WenKai Screen", -apple-system, BlinkMacSystemFont, 
-               "PingFang SC", "Microsoft YaHei", serif;
+  /* font-family 由 extend_head.html 根据语言动态设置 */
   font-size: 17px;
   line-height: 1.8;
   letter-spacing: 0.02em;
