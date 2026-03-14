@@ -15,6 +15,11 @@ pagerSize = 10
 [minify]
 disableXML = true
 minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+    keepCSS2 = true
+    [minify.tdewolff.html]
+    keepQuotes = true
 
 [params]
 googleAnalyticsID = "G-PEVTF8NDTP"
