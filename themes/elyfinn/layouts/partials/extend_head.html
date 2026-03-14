@@ -4,55 +4,24 @@
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-{{- /* 字体：Lora（英文）+ 霞鹜文楷（中文）*/ -}}
+{{- /* 字体：按语言加载 */ -}}
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+{{- if eq .Lang "en" }}
+{{- /* 英文站用 Lora */ -}}
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+body { font-family: "Lora", Georgia, serif !important; }
+</style>
+{{- else }}
+{{- /* 中文站用落霞孤鹜 */ -}}
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css" as="style">
 <link href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css" rel="stylesheet">
 <style>
-/* Lora 只用于拉丁字符 */
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787weuyJG.ttf) format('truetype');
-  unicode-range: U+0000-007F, U+0080-00FF, U+0100-017F, U+0180-024F, U+2000-206F, U+2070-209F, U+20A0-20CF, U+2100-214F;
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787wsuyJG.ttf) format('truetype');
-  unicode-range: U+0000-007F, U+0080-00FF, U+0100-017F, U+0180-024F, U+2000-206F, U+2070-209F, U+20A0-20CF, U+2100-214F;
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787zAvCJG.ttf) format('truetype');
-  unicode-range: U+0000-007F, U+0080-00FF, U+0100-017F, U+0180-024F, U+2000-206F, U+2070-209F, U+20A0-20CF, U+2100-214F;
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v37/0QI6MX1D_JOuGQbT0gvTJPa787z5vCJG.ttf) format('truetype');
-  unicode-range: U+0000-007F, U+0080-00FF, U+0100-017F, U+0180-024F, U+2000-206F, U+2070-209F, U+20A0-20CF, U+2100-214F;
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lora/v37/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFkqg.ttf) format('truetype');
-  unicode-range: U+0000-007F, U+0080-00FF, U+0100-017F, U+0180-024F, U+2000-206F, U+2070-209F, U+20A0-20CF, U+2100-214F;
-}
+body { font-family: "LXGW WenKai Screen", -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif !important; }
 </style>
+{{- end }}
 
 
 
