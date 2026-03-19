@@ -82,14 +82,14 @@ Listening to courses, podcasts, talks, AI generates:
 - Notable quotes verbatim
 - **No TODO list**
 
-Why no TODOs? Because lectures are learning input, not task assignments. This detail matters—prevents AI from randomly generating action items.
+Why no TODOs? Lectures are for learning, not for task assignments. This matters—you don't want AI making up action items out of nowhere.
 
 ### 👔 Interview Recording → Evaluation Report
 
-A blessing for HR and interviewers:
+HR folks and interviewers, this one's for you:
 - 5-dimension scoring: communication, expertise, logic, attitude, potential
-- Each dimension 1-5 score + specific comments
-- Ready to archive or send to hiring managers
+- Each dimension gets a 1-5 score + specific comments
+- Ready to archive or forward to hiring managers
 
 ### 📞 Client Communication → Commitment Tracking
 
@@ -102,17 +102,17 @@ Essential for sales, BD, customer success:
 
 ### 💡 Brainstorm → Ideas List
 
-For divergent thinking recordings, AI will:
-- Extract all ideas
-- Mark feasibility and priority for each
-- Miss nothing from "what if we try..."
+For divergent thinking sessions, AI will:
+- Pull out every idea mentioned
+- Tag each with feasibility and priority
+- Catch every "what if we try..."
 
 ### 📝 Personal Notes → Organized Text
 
-For talking-to-yourself recordings, AI will:
-- Organize into smooth text
-- Remove "um," "like," "you know"
-- Preserve meaning, easier to read
+For those talking-to-yourself moments, AI will:
+- Clean it up into readable text
+- Strip out the "um," "like," "you know"
+- Keep the meaning intact
 
 ## How Does AI Determine Type?
 
@@ -191,7 +191,7 @@ Directory: `skills/elyfinn-voice-notes/`
 
 Includes: 7 type templates, classification logic, config system, documentation.
 
-Star ⭐ welcome, questions can be Issues.
+Give it a Star ⭐ if you find it useful. Got questions? Open an Issue.
 
 ---
 
