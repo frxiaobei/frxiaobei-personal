@@ -4,6 +4,10 @@ date: 2026-03-19
 draft: false
 summary: "The real pressure on many roles doesn't come from today's AI. It comes from a future tipping point—when 'good enough + cheap + always available' all become true at once."
 tags: ["AI", "Management", "Thoughts"]
+cover:
+  image: "cover.png"
+  alt: "AI Era Management"
+  relative: true
 ---
 
 I've been seeing news about frontend teams being dissolved and laid off everywhere lately.

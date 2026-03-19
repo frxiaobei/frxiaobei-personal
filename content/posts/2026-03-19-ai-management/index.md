@@ -4,6 +4,10 @@ date: 2026-03-19
 draft: false
 summary: "很多岗位真正的压力，不来自今天的 AI，而来自未来某一个节点——当「还不错 + 很便宜 + 随时可用」同时成立时，结构就会被重新定价。"
 tags: ["AI", "管理", "思考"]
+cover:
+  image: "cover.png"
+  alt: "AI 时代的管理"
+  relative: true
 ---
 
 最近看到一堆前端团队解散、裁员的消息。

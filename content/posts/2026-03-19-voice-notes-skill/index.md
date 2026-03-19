@@ -4,6 +4,10 @@ date: 2026-03-19
 draft: false
 summary: "0元硬件+0订阅+数据本地：用 OpenClaw 把手机录音自动变成结构化笔记，7种类型智能识别，三年省6000块。"
 tags: ["AI", "效率", "OpenClaw"]
+cover:
+  image: "cover.png"
+  alt: "语音笔记自动化"
+  relative: true
 ---
 
 > **一句话总结**

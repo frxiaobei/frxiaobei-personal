@@ -4,6 +4,10 @@ date: 2026-03-19
 draft: false
 summary: "$0 hardware + $0 subscription + 100% local data: Turn phone recordings into structured notes automatically. 7 recording types, smart detection. Save $2000 over three years."
 tags: ["AI", "Productivity", "OpenClaw"]
+cover:
+  image: "cover.png"
+  alt: "Voice notes automation"
+  relative: true
 ---
 
 > **TL;DR**
