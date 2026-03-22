@@ -102,4 +102,4 @@ With so many open-source foundation models available, **this wave of medical AI 
 
 ---
 
-**Follow Xiaobei for insights on AI deployment, startup opportunities, and tech analysis.**
+**Follow 凡人小北 for insights on AI deployment, startup opportunities, and tech analysis.**
