@@ -4,6 +4,10 @@ date: 2026-03-25
 draft: false
 summary: "Anthropic 工程师实战：用 GAN 思路设计三 Agent 架构，让 Claude 连续 6 小时自主构建完整应用。"
 tags: ["AI", "Claude", "Agent", "翻译", "Anthropic"]
+cover:
+  image: "cover.png"
+  alt: "AI 自主编码"
+  relative: true
 ---
 
 
