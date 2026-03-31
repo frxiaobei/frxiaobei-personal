@@ -9,6 +9,7 @@ author: "凡人小北"
 cover:
   image: "cover.png"
   alt: "From Hierarchy to Intelligence"
+  relative: true
 ---
 
 > 📌 **译者说**
