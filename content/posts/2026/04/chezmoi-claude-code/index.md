@@ -107,8 +107,6 @@ git remote add origin https://github.com/你的用户名/dotfiles.git
 
 在动手之前，先搞清楚 `~/.claude` 目录里有什么，哪些需要同步：
 
-![目录结构](01-directory-structure.png)
-
 ```
 ~/.claude/
 ├── CLAUDE.md          ✅ 要同步 - 全局指令
@@ -198,8 +196,6 @@ EOF
 ## 七、用 external 管理 GitHub Skills
 
 这是最有价值的部分——让 chezmoi 自动从 GitHub 拉取 skills，还能定期更新。
-
-![工作流程](02-workflow.png)
 
 ### 7.1 创建 external 配置
 

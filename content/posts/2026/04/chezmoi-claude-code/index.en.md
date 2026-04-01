@@ -107,8 +107,6 @@ git remote add origin https://github.com/yourusername/dotfiles.git
 
 Before diving in, understand what's in `~/.claude` and what needs syncing:
 
-![Directory Structure](01-directory-structure.png)
-
 ```
 ~/.claude/
 ├── CLAUDE.md          ✅ Sync - Global instructions
@@ -198,8 +196,6 @@ This way, even if you accidentally run `chezmoi add ~/.claude`, these directorie
 ## 7. Managing GitHub Skills with External
 
 This is the most valuable part — letting chezmoi auto-pull skills from GitHub with periodic updates.
-
-![Workflow](02-workflow.png)
 
 ### 7.1 Create External Config
 
