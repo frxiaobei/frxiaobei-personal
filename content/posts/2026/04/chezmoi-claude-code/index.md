@@ -600,4 +600,29 @@ tests/
 
 ---
 
+## 延伸：不止 Claude Code
+
+chezmoi 能管理的远不止 Claude Code 配置。同样的方法可以用来同步：
+
+- **zshrc / bashrc** — 你的 shell 配置
+- **git config** — 全局 Git 设置
+- **SSH config** — 服务器连接配置
+- **Vim / Neovim** — 编辑器配置
+- **tmux** — 终端复用器配置
+- **其他任何 dotfiles**
+
+一旦用上了 chezmoi，你会发现再也回不去手动复制配置的日子了。
+
+---
+
+## 懒人方案
+
+如果你懒得一步步配，可以直接把这篇文章丢给你的 Claude Code 或 OpenClaw（小龙虾），让 AI 帮你搞定：
+
+> "帮我按照这篇教程配置 chezmoi，同步我的 Claude Code 配置到 GitHub。"
+
+AI 会帮你创建仓库、添加配置、设置 external——你只需要最后确认一下就行。
+
+---
+
 *如果这篇文章帮到了你，欢迎分享给也在用 Claude Code 的朋友。*
