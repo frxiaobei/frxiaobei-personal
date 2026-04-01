@@ -4,7 +4,11 @@ date: 2026-04-01T22:00:00+08:00
 draft: false
 summary: "一处修改，处处同步。用 chezmoi 管理 Claude Code 配置和 Skills，支持自动更新、模板区分机器、新机器一键配置。"
 tags: ["Claude Code", "chezmoi", "dotfiles", "效率工具"]
-image: cover.png
+author: "凡人小北"
+cover:
+  image: "cover.png"
+  alt: "chezmoi 同步 Claude Code 配置"
+  relative: true
 ---
 
 > 一处修改，处处同步。新机器一条命令搞定。
