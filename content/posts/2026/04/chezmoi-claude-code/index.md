@@ -11,6 +11,8 @@ cover:
   relative: true
 ---
 
+# 用 chezmoi 同步多台机器的 Claude Code 配置：完整教程
+
 > 一处修改，处处同步。新机器一条命令搞定。
 
 ---
