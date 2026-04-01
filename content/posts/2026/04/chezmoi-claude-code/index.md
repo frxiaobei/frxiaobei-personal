@@ -128,7 +128,7 @@ git remote add origin https://github.com/你的用户名/dotfiles.git
 |-----|------|---------|
 | **Marketplace** | obsidian, frontend-design | 记录在 settings.json，Claude Code 启动时自动安装 |
 | **GitHub 公开仓库** | gstack, humanizer | 用 chezmoi external 自动拉取 |
-| **私有/自己写的** | 公司内部 skill | chezmoi add 直接管理，或放私有 repo |
+| **私有/自己写的** | 自己写的 skill | chezmoi add 直接管理，或放私有 repo |
 
 ---
 
