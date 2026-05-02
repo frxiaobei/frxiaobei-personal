@@ -36,7 +36,7 @@ Anthropic 后来把 Claude Free / Pro / Max、Claude Code、API、Commercial Ter
 
 与此同时，OpenAI 这边给了另一条路。Sam Altman 直接发推说可以用 ChatGPT 账号登录 OpenClaw，用订阅额度跑任务。Codex 官方文档也写得很直接：Every ChatGPT plan includes Codex。GPT-5.5 发布后，官方 system card 把它定位成适合复杂真实工作的模型：写代码、研究、分析信息、跨工具执行。
 
-![Sam Altman 推文截图](sam-altman-openclaw-tweet.png)
+[![Sam Altman 推文截图](sam-altman-openclaw-tweet.png)](https://x.com/sama/status/2050357911915028689)
 
 从理性上看，切过去很合理。成本、规则、能力，都说得通。
 

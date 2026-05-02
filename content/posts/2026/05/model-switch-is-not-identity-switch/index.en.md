@@ -36,7 +36,7 @@ So for a while I was topping up API credits to keep things running. It worked, b
 
 Meanwhile, OpenAI offered a different path. Sam Altman tweeted that you can sign in to OpenClaw with your ChatGPT account and use your subscription there. The Codex docs backed it up: Every ChatGPT plan includes Codex. After GPT-5.5 launched, the system card positioned it squarely for complex real-world work: coding, research, analysis, cross-tool execution.
 
-![Sam Altman's tweet about OpenClaw](sam-altman-openclaw-tweet.png)
+[![Sam Altman's tweet about OpenClaw](sam-altman-openclaw-tweet.png)](https://x.com/sama/status/2050357911915028689)
 
 Rationally, the switch made sense. Cost, rules, capability — it all checked out.
 
