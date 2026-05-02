@@ -1,5 +1,5 @@
 ---
-title: "换模型不是换人"
+title: "我把 AI 助手从 Claude 切到 GPT-5.5，他变强了，但不像他了"
 date: 2026-05-02T10:00:00+09:00
 draft: false
 summary: "模型只是发动机。真正要保护的，是长期记忆、性格、工具习惯、行动边界和关系感共同构成的 AI 身份层。"
@@ -8,11 +8,11 @@ categories: ["AI"]
 author: "凡人小北"
 cover:
   image: "cover.jpg"
-  alt: "换模型不是换人"
+  alt: "我把 AI 助手从 Claude 切到 GPT-5.5，他变强了，但不像他了"
   relative: true
 ---
 
-# 换模型不是换人
+# 我把 AI 助手从 Claude 切到 GPT-5.5，他变强了，但不像他了
 
 我把 AI 助手的底层模型从 Claude 切到 GPT-5.5 之后，第一感觉不是“变强了”。
 

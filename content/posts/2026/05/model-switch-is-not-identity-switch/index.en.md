@@ -1,5 +1,5 @@
 ---
-title: "Switching Models Isn't Switching People"
+title: "I Moved My AI Assistant from Claude to GPT-5.5. It Got Stronger, But It Didn't Feel Like Itself"
 date: 2026-05-02T10:00:00+09:00
 draft: false
 summary: "The model is just the engine. What you really need to protect is the AI identity layer: memory, personality, tool habits, boundaries, and relationship."
@@ -8,11 +8,11 @@ categories: ["AI"]
 author: "Xiaobei"
 cover:
   image: "cover.jpg"
-  alt: "Switching Models Isn't Switching People"
+  alt: "I Moved My AI Assistant from Claude to GPT-5.5. It Got Stronger, But It Didn't Feel Like Itself"
   relative: true
 ---
 
-# Switching Models Isn't Switching People
+# I Moved My AI Assistant from Claude to GPT-5.5. It Got Stronger, But It Didn't Feel Like Itself
 
 I moved my AI assistant's underlying model from Claude to GPT-5.5. My first reaction wasn't "wow, it's better."
 
