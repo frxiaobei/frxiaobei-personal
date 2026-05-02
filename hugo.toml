@@ -3,6 +3,7 @@ title = "凡人小北 · Elyfinn"
 theme = ["elyfinn", "PaperMod"]
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
+defaultContentLanguageInSubdir = false
 
 enableRobotsTXT = true
 buildDrafts = false
@@ -152,8 +153,6 @@ weight = 50
 # Search
 [outputs]
 home = ["HTML", "RSS", "JSON"]
-
-defaultContentLanguageInSubdir = false
 
 # Languages
 [languages]

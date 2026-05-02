@@ -7,7 +7,7 @@ tags: ["AI", "AI Agent", "OpenClaw", "GPT-5.5", "Claude"]
 categories: ["AI"]
 author: "Xiaobei"
 cover:
-  image: "cover.png"
+  image: "cover.jpg"
   alt: "Switching Models Isn't Switching People"
   relative: true
 ---

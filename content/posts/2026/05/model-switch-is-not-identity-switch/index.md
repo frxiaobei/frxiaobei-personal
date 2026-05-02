@@ -7,7 +7,7 @@ tags: ["AI", "AI Agent", "OpenClaw", "GPT-5.5", "Claude"]
 categories: ["AI"]
 author: "凡人小北"
 cover:
-  image: "cover.png"
+  image: "cover.jpg"
   alt: "换模型不是换人"
   relative: true
 ---
