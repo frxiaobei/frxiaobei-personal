@@ -36,6 +36,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','{{ site.Params.googleTagManager.id }}');</script>
 {{- end }}
 
+{{- /* Google AdSense site verification */ -}}
+{{- with site.Params.googleAdSenseAccount }}
+<meta name="google-adsense-account" content="{{ . }}">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>
+{{- end }}
+
 {{- /* Google Analytics 4 */ -}}
 {{- if site.Params.googleAnalyticsID }}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.googleAnalyticsID }}"></script>

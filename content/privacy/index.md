@@ -7,7 +7,7 @@ ShowToc: false
 ShowBreadCrumbs: false
 ---
 
-最后更新：2026 年 3 月 1 日
+最后更新：2026 年 5 月 2 日
 
 ## 简要说明
 
@@ -31,6 +31,12 @@ ShowBreadCrumbs: false
 
 您可以使用浏览器插件 [Google Analytics Opt-out](https://tools.google.com/dlpage/gaoptout) 禁用追踪。
 
+### Google AdSense 与第三方广告
+
+本站可能使用 Google AdSense 或其他第三方广告服务展示广告。广告服务商可能使用 Cookies、设备标识符或类似技术，用于投放广告、限制广告展示频率、衡量广告效果，以及在适用情况下提供个性化广告。
+
+Google 及其合作伙伴可能会根据您访问本站和其他网站的情况投放广告。您可以访问 [Google 广告设置](https://adssettings.google.com/) 管理个性化广告偏好，也可以通过 [YourAdChoices](https://youradchoices.com/) 了解和管理部分第三方广告偏好。
+
 ### Cloudflare
 
 本站使用 Cloudflare 提供 CDN 加速和安全防护。Cloudflare 可能收集基本的访问日志。
@@ -45,7 +51,7 @@ ShowBreadCrumbs: false
 
 ## Cookies
 
-本站可能通过上述第三方服务使用 Cookies。您可以在浏览器设置中管理或禁用 Cookies。
+本站可能通过上述第三方服务使用 Cookies 或类似技术。Cookies 可能用于网站运行、访问统计、评论功能、广告投放和广告效果衡量。您可以在浏览器设置中管理或禁用 Cookies；禁用 Cookies 后，部分功能或广告相关设置可能无法正常工作。
 
 ## 您的权利
 

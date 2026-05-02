@@ -7,7 +7,7 @@ ShowToc: false
 ShowBreadCrumbs: false
 ---
 
-Last updated: March 1, 2026
+Last updated: May 2, 2026
 
 ## Summary
 
@@ -31,6 +31,12 @@ This site uses Google Analytics to understand traffic patterns. Google Analytics
 
 You can opt out using the [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout).
 
+### Google AdSense and Third-Party Advertising
+
+This site may use Google AdSense or other third-party advertising services to show ads. Advertising providers may use cookies, device identifiers, or similar technologies to serve ads, limit how often ads are shown, measure ad performance, and, where applicable, provide personalized advertising.
+
+Google and its partners may serve ads based on your visits to this site and other sites. You can manage personalized ad preferences in [Google Ads Settings](https://adssettings.google.com/) and learn more about managing some third-party advertising preferences through [YourAdChoices](https://youradchoices.com/).
+
 ### Cloudflare
 
 This site uses Cloudflare for CDN and security. Cloudflare may collect basic access logs.
@@ -45,7 +51,7 @@ See [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-po
 
 ## Cookies
 
-This site may use cookies through the third-party services mentioned above. You can manage or disable cookies in your browser settings.
+This site may use cookies or similar technologies through the third-party services mentioned above. Cookies may be used for site functionality, analytics, comments, ad delivery, and ad measurement. You can manage or disable cookies in your browser settings; some functionality or advertising preferences may not work as expected if cookies are disabled.
 
 ## Your Rights
 
