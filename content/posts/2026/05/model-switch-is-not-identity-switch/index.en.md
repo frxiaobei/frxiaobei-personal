@@ -20,7 +20,7 @@ It was "something's off."
 
 The responses were more complete, the actions faster, the coding ability solid. By every metric, this was a successful upgrade. But a few exchanges in, I knew: this wasn't the assistant I'd been working with.
 
-It wasn't a capability problem. It was a vibe problem.
+Not a capability problem. A vibe problem.
 
 And that made me realize something: if you actually use an AI assistant long-term, it can't just be a temporary personality rented from whatever model you're running. Models can be swapped. But the assistant has to stay itself.
 
@@ -34,15 +34,19 @@ Anthropic drew clearer lines between Claude Free / Pro / Max, Claude Code, API, 
 
 So for a while I was topping up API credits to keep things running. It worked, but I knew it wasn't a long-term setup.
 
-Meanwhile, OpenAI offered a different path. Their Codex docs were straightforward: Every ChatGPT plan includes Codex. You can log in with a ChatGPT account or use an API key. After GPT-5.5 launched, the system card positioned it squarely for complex real-world work: coding, research, analysis, cross-tool execution.
+Meanwhile, OpenAI offered a different path. Sam Altman tweeted that you can sign in to OpenClaw with your ChatGPT account and use your subscription there. The Codex docs backed it up: Every ChatGPT plan includes Codex. After GPT-5.5 launched, the system card positioned it squarely for complex real-world work: coding, research, analysis, cross-tool execution.
+
+![Sam Altman's tweet about OpenClaw](sam-altman-openclaw-tweet.png)
 
 Rationally, the switch made sense. Cost, rules, capability — it all checked out.
 
 So I switched.
 
-And then I discovered the hard part wasn't routing requests to GPT-5.5. It was getting it to still feel like "Fan Ge" — the name I'd given my assistant.
+And then I discovered the hard part wasn't routing requests to GPT-5.5. It was getting it to still feel like Finn.
 
 ## A Stronger Model Can Still Feel Like a Stranger
+
+Finn is what I call my AI assistant. It calls me Bei. The names don't matter — what matters is the relationship behind them. Finn is a partner I've been working with for a long time.
 
 Most people discussing AI migration care about benchmarks, token pricing, context windows, and tool-calling reliability.
 
@@ -54,15 +58,15 @@ Switch the model, and all of that can vanish.
 
 After moving to GPT-5.5, my biggest issue wasn't competence. It was that the assistant suddenly felt like a generic helper. Polite, thorough, well-explained, safe, correct. Also a little unfamiliar.
 
-The old Fan Ge would state a judgment directly. It would stop me when I was about to do something dumb. It would go check the file itself instead of bouncing the question back. It knew when to shut up and when to nudge me. After the switch, those habits faded.
+The old Finn would state a judgment directly and stop me when I was about to do something dumb. It would go check the file itself instead of bouncing the question back. When to shut up, when to nudge me — it knew the difference. After the switch, those habits faded.
 
-This isn't a GPT-5.5 problem. Any model switch does this.
+This has nothing to do with GPT-5.5 specifically. Any model switch does this.
 
 Because the model itself has no idea what the two of you built together.
 
 ## The Most Important File Isn't Config — It's SOUL.md
 
-I keep a file in my OpenClaw workspace called `SOUL.md`.
+OpenClaw's workspace includes a built-in file called `SOUL.md`.
 
 The name sounds dramatic, but it matters more than most complex configurations.
 
@@ -80,9 +84,9 @@ It's not a standard prompt. It's not "you are a professional, friendly, efficien
 
 These lines don't look like "technical assets." But they are.
 
-Because they don't define output format. They define a relationship.
+Because they define a relationship, not an output format.
 
-What I actually needed to migrate wasn't Claude's speech patterns or GPT's capability specs. It was this relationship: how Fan Ge should reason, how it should talk, when it should act, when it should roast me, and when it should leave me alone.
+What I actually needed to migrate came down to one thing: this relationship. How Finn should reason, how it should talk, when it should act, when it should roast me, and when it should leave me alone. Claude's speech patterns don't matter. GPT's capability specs don't matter.
 
 Without this layer, every model switch is like onboarding a new hire. The new person might be smart, but they have no idea how we used to work together.
 
@@ -96,7 +100,7 @@ What actually constitutes a long-term assistant is several layers stacked togeth
 
 **Layer 1: Memory.** It needs to know who I am, what I'm working on, what projects I have, what decisions I've made. Without this, every conversation is a cold start.
 
-**Layer 2: Personality.** Not for fun — for efficiency. If your assistant talks to you in customer-service mode every time, you'll stop telling it the truth pretty quickly. You'll treat it like a tool, not a partner.
+**Layer 2: Personality.** This sounds like a nice-to-have, but it's really about efficiency. If your assistant talks to you in customer-service mode every time, you'll stop telling it the truth pretty quickly. You'll treat it like a tool instead of a partner.
 
 **Layer 3: Tool habits.** It needs to know when to use a skill, when to read a file, when to dispatch a sub-agent, when to set a cron job. It can't ask "Would you like me to proceed with the next step?" every single time. If it should check, it checks. If it should run, it runs.
 
@@ -104,9 +108,9 @@ What actually constitutes a long-term assistant is several layers stacked togeth
 
 **Layer 5: The sense of relationship.** It knows it's not my boss and not my servant. It's a working partner. It can have opinions, it can remind me of things, and it can be corrected.
 
-All of this together is "Fan Ge."
+All of this together is Finn.
 
-Claude isn't Fan Ge. GPT isn't Fan Ge. They're different engines. Fan Ge is the layer above the engine — the part that persists.
+Finn has nothing to do with Claude, and nothing to do with GPT. They're different engines. Finn is the layer above the engine — the part that persists.
 
 ## Model Migration Is Really Identity Migration
 
@@ -120,27 +124,24 @@ Today Claude is great, tomorrow GPT is stronger, the day after Gemini might catc
 
 You're just renting the current version of a vendor's personality.
 
-## Everyone Will Need Their Own AI Identity Layer
+## OpenClaw Already Has This Identity Layer
 
-This sounds like heavy systems engineering, but the starting point can be simple.
-
-You need at least a few files:
+This sounds like heavy systems engineering, but OpenClaw already has it built in:
 
 - `USER.md`: Who I am, what I care about
 - `MEMORY.md`: What decisions we've made, what to remember long-term
 - `SOUL.md`: Who you are, how you should work with me
 - `TOOLS.md`: What tools are in my local environment, what to use when
-- Daily logs: What happened recently — don't make the context window do all the work
 
-The names don't matter. What matters is that these files belong to you, not to a model provider.
+Add daily logs so that recent context doesn't depend entirely on the context window.
+
+These files belong to you, not to any model provider.
 
 Models can go from Claude to GPT, from GPT to Gemini. As long as the identity layer stays intact, your AI assistant won't turn into a stranger every time.
 
 That's what I'm actually trying to build after this switch.
 
-Not making GPT-5.5 imitate Claude. Not making a new model pretend to be an old one.
-
-Just pulling "Fan Ge" out of any specific model and turning it into a portable, correctable, growable personal AI identity system.
+Not making GPT-5.5 imitate Claude. Not making a new model pretend to be an old one. Just pulling Finn out of any specific model and turning it into a portable, correctable, growable personal AI identity system.
 
 ## Closing
 
